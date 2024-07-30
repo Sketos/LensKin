@@ -1,0 +1,738 @@
+2024-07-29 15:39:16,773 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:42:53,077 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:42:53,091 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:42:53,117 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:42:53,117 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:42:53,118 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:42:53,118 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:42:53,118 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:42:53,118 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:42:53,118 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:42:53,121 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:44:06,334 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:44:06,340 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:44:06,355 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:44:06,355 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:44:06,355 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:44:06,355 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:44:06,355 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:44:06,355 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:44:06,355 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:44:06,356 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:44:27,377 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:44:27,382 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:44:27,397 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:44:27,397 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:44:27,398 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:44:27,398 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:44:27,398 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:44:27,398 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:44:27,398 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:44:27,399 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:44:49,303 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:44:49,308 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:44:49,323 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:44:49,323 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:44:49,323 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:44:49,324 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:44:49,324 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:44:49,324 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:44:49,324 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:44:49,325 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:45:14,569 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:45:14,574 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:45:14,589 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:45:14,589 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:45:14,589 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:45:14,589 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:45:14,589 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:45:14,589 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:45:14,590 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:45:14,591 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:46:17,233 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:46:17,239 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:46:17,253 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:46:17,254 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:46:17,254 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:46:17,254 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:46:17,254 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:46:17,254 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:46:17,254 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:46:17,255 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:48:42,438 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:48:42,454 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:48:42,479 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:48:42,480 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:48:42,480 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:48:42,480 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:48:42,480 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:48:42,480 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:48:42,480 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:48:42,483 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:48:58,367 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:48:58,373 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:48:58,388 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:48:58,388 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:48:58,388 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:48:58,388 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:48:58,388 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:48:58,388 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:48:58,388 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:48:58,389 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:50:48,393 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:50:48,399 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:50:48,414 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:50:48,414 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:50:48,414 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:50:48,414 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:50:48,414 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:50:48,414 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:50:48,415 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:50:48,415 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:51:06,189 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:51:06,194 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:51:06,209 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:51:06,209 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:51:06,210 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:51:06,210 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:51:06,210 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:51:06,210 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:51:06,210 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:51:06,211 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:51:36,181 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:51:36,186 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:51:36,201 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:51:36,202 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:51:36,202 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:51:36,202 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:51:36,202 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:51:36,202 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:51:36,202 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:51:36,203 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:51:50,875 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:51:50,881 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:51:50,896 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:51:50,896 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:51:50,896 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:51:50,896 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:51:50,896 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:51:50,896 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:51:50,896 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:51:50,897 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:52:01,034 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:52:01,040 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:52:01,055 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:52:01,055 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:52:01,055 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:52:01,055 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:52:01,055 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:52:01,055 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:52:01,055 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:52:01,057 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:53:39,170 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:53:39,183 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:53:39,208 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:53:39,208 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:53:39,208 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:53:39,208 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:53:39,209 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:53:39,209 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:53:39,209 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:53:39,211 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:53:57,466 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:53:57,472 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:53:57,487 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:53:57,487 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:53:57,487 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:53:57,487 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:53:57,487 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:53:57,487 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:53:57,487 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:53:57,488 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:56:15,517 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:56:15,524 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:56:15,541 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:56:15,541 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:56:15,541 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:56:15,541 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:56:15,541 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:56:15,542 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:56:15,542 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:56:15,543 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 15:56:44,424 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 15:56:44,430 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:56:44,446 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 15:56:44,446 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 15:56:44,446 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 15:56:44,446 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 15:56:44,446 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 15:56:44,446 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 15:56:44,447 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 15:56:44,448 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 16:53:52,597 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 16:53:52,615 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:53:52,642 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:53:52,642 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 16:53:52,642 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 16:53:52,642 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 16:53:52,642 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 16:53:52,642 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 16:53:52,643 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 16:53:52,646 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 16:54:10,883 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 16:54:10,888 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:54:10,903 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:54:10,903 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 16:54:10,904 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 16:54:10,904 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 16:54:10,904 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 16:54:10,904 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 16:54:10,904 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 16:54:10,905 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 16:55:21,629 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 16:55:21,634 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:55:21,649 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:55:21,649 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 16:55:21,649 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 16:55:21,649 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 16:55:21,649 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 16:55:21,649 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 16:55:21,649 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 16:55:21,650 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 16:57:40,316 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 16:57:40,321 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:57:40,336 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:57:40,336 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 16:57:40,336 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 16:57:40,336 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 16:57:40,336 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 16:57:40,337 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 16:57:40,337 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 16:57:40,338 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 16:58:23,762 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 16:58:23,768 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:58:23,783 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:58:23,783 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 16:58:23,783 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 16:58:23,783 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 16:58:23,783 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 16:58:23,783 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 16:58:23,784 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 16:58:23,785 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 16:58:55,993 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 16:58:55,999 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:58:56,015 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 16:58:56,016 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 16:58:56,016 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 16:58:56,016 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 16:58:56,016 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 16:58:56,016 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 16:58:56,016 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 16:58:56,017 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:00:06,394 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:00:06,403 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:00:06,421 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:00:06,421 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:00:06,421 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:00:06,421 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:00:06,422 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:00:06,422 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:00:06,422 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:00:06,423 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:01:13,376 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:01:13,382 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:01:13,397 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:01:13,397 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:01:13,397 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:01:13,397 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:01:13,398 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:01:13,398 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:01:13,398 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:01:13,399 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:02:08,793 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:02:08,799 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:02:08,814 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:02:08,814 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:02:08,814 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:02:08,814 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:02:08,814 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:02:08,815 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:02:08,815 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:02:08,816 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:02:26,433 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:02:26,438 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:02:26,454 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:02:26,454 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:02:26,454 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:02:26,454 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:02:26,454 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:02:26,454 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:02:26,455 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:02:26,456 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:04:10,332 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:04:10,337 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:04:10,352 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:04:10,353 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:04:10,353 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:04:10,353 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:04:10,353 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:04:10,353 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:04:10,353 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:04:10,354 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:05:22,622 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:05:22,628 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:05:22,642 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:05:22,642 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:05:22,643 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:05:22,643 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:05:22,643 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:05:22,643 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:05:22,643 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:05:22,644 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:06:48,394 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:06:48,399 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:06:48,414 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:06:48,414 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:06:48,414 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:06:48,414 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:06:48,414 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:06:48,414 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:06:48,414 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:06:48,415 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:07:14,291 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:07:14,297 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:07:14,315 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:07:14,315 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:07:14,315 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:07:14,315 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:07:14,315 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:07:14,315 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:07:14,315 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:07:14,317 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:08:15,278 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:08:15,290 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:08:15,312 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:08:15,312 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:08:15,312 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:08:15,312 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:08:15,312 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:08:15,312 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:08:15,313 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:08:15,315 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:09:35,167 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:09:35,173 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:09:35,188 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:09:35,188 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:09:35,188 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:09:35,188 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:09:35,188 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:09:35,188 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:09:35,188 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:09:35,189 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:09:57,451 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:09:57,456 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:09:57,471 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:09:57,471 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:09:57,471 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:09:57,471 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:09:57,471 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:09:57,472 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:09:57,472 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:09:57,473 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:10:32,851 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:10:32,856 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:10:32,871 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:10:32,871 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:10:32,872 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:10:32,872 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:10:32,872 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:10:32,872 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:10:32,872 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:10:32,873 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:10:52,870 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:10:52,875 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:10:52,890 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:10:52,890 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:10:52,890 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:10:52,890 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:10:52,890 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:10:52,890 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:10:52,890 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:10:52,891 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:11:28,003 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:11:28,009 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:11:28,027 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:11:28,027 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:11:28,027 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:11:28,027 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:11:28,027 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:11:28,027 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:11:28,027 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:11:28,029 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:12:10,760 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:12:10,767 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:12:10,782 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:12:10,782 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:12:10,783 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:12:10,783 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:12:10,783 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:12:10,783 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:12:10,783 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:12:10,784 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:13:12,157 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:13:12,162 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:13:12,177 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:13:12,177 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:13:12,177 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:13:12,177 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:13:12,177 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:13:12,177 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:13:12,177 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:13:12,178 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:15:02,006 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:15:02,013 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:15:02,030 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:15:02,030 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:15:02,031 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:15:02,031 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:15:02,031 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:15:02,031 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:15:02,031 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:15:02,032 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:18:16,760 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:18:16,765 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:18:16,780 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:18:16,780 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:18:16,780 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:18:16,780 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:18:16,780 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:18:16,780 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:18:16,781 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:18:16,782 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:18:44,806 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:18:44,818 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:18:44,837 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:18:44,837 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:18:44,837 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:18:44,837 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:18:44,837 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:18:44,837 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:18:44,837 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:18:44,838 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:19:06,919 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:19:06,924 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:19:06,941 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:19:06,941 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:19:06,941 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:19:06,941 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:19:06,941 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:19:06,941 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:19:06,941 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:19:06,943 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:20:36,726 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:20:36,733 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:20:36,751 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:20:36,751 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:20:36,751 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:20:36,751 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:20:36,751 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:20:36,751 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:20:36,752 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:20:36,753 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:22:33,011 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:22:33,028 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:22:33,054 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:22:33,055 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:22:33,055 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:22:33,055 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:22:33,055 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:22:33,055 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:22:33,055 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:22:33,058 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 17:23:47,699 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 17:23:47,714 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:23:47,741 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 17:23:47,742 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 17:23:47,742 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 17:23:47,742 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 17:23:47,742 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 17:23:47,742 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 17:23:47,742 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 17:23:47,745 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:28:28,950 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:28:28,957 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:28:28,984 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:28:28,984 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:28:28,984 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:28:28,984 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:28:28,984 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:28:28,985 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:28:28,985 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:28:28,987 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:28:52,284 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:28:52,289 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:28:52,307 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:28:52,308 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:28:52,308 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:28:52,308 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:28:52,308 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:28:52,308 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:28:52,308 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:28:52,309 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:29:57,070 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:29:57,075 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:29:57,091 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:29:57,091 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:29:57,092 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:29:57,092 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:29:57,092 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:29:57,092 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:29:57,092 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:29:57,093 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:30:16,120 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:30:16,126 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:30:16,143 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:30:16,143 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:30:16,143 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:30:16,143 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:30:16,144 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:30:16,144 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:30:16,144 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:30:16,145 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:32:31,740 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:32:31,746 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:32:31,763 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:32:31,763 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:32:31,763 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:32:31,763 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:32:31,763 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:32:31,763 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:32:31,764 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:32:31,765 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:36:24,214 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:36:24,220 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:36:24,238 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:36:24,238 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:36:24,238 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:36:24,238 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:36:24,238 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:36:24,238 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:36:24,238 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:36:24,240 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:36:44,737 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:36:44,742 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:36:44,758 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:36:44,758 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:36:44,759 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:36:44,759 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:36:44,759 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:36:44,759 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:36:44,759 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:36:44,760 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:37:27,630 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:37:27,636 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:37:27,653 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:37:27,653 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:37:27,654 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:37:27,654 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:37:27,654 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:37:27,654 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:37:27,654 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:37:27,655 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:38:04,306 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:38:04,312 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:38:04,329 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:38:04,329 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:38:04,330 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:38:04,330 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:38:04,330 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:38:04,330 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:38:04,330 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:38:04,331 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:38:22,712 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:38:22,718 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:38:22,734 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:38:22,734 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:38:22,734 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:38:22,734 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:38:22,734 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:38:22,734 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:38:22,734 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:38:22,735 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:39:35,896 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:39:35,900 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:39:35,916 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:39:35,916 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:39:35,916 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:39:35,917 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:39:35,917 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:39:35,917 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:39:35,917 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:39:35,918 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:39:50,319 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:39:50,325 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:39:50,341 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:39:50,341 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:39:50,342 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:39:50,342 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:39:50,342 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:39:50,342 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:39:50,342 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:39:50,343 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:42:13,761 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:42:13,768 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:42:13,786 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:42:13,786 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:42:13,786 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:42:13,786 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:42:13,786 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:42:13,786 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:42:13,786 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:42:13,788 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:42:27,680 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:42:27,685 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:42:27,702 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:42:27,703 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:42:27,703 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:42:27,703 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:42:27,703 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:42:27,703 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:42:27,703 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:42:27,704 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:44:17,190 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:44:17,196 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:44:17,212 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:44:17,212 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:44:17,213 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:44:17,213 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:44:17,213 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:44:17,213 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:44:17,213 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:44:17,214 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 21:44:33,781 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 21:44:33,786 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:44:33,802 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 21:44:33,802 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 21:44:33,802 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 21:44:33,802 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 21:44:33,802 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 21:44:33,802 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 21:44:33,802 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 21:44:33,804 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 22:06:17,226 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 22:06:17,232 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:06:17,250 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:06:17,250 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 22:06:17,250 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 22:06:17,250 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 22:06:17,250 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 22:06:17,250 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 22:06:17,250 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 22:06:17,251 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 22:06:43,628 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 22:06:43,633 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:06:43,649 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:06:43,649 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 22:06:43,649 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 22:06:43,649 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 22:06:43,650 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 22:06:43,650 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 22:06:43,650 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 22:06:43,651 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 22:13:17,449 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 22:13:17,455 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:13:17,470 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:13:17,471 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 22:13:17,471 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 22:13:17,471 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 22:13:17,471 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 22:13:17,471 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 22:13:17,471 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 22:13:17,472 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 22:18:08,332 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 22:18:08,337 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:18:08,353 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:18:08,353 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 22:18:08,353 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 22:18:08,353 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 22:18:08,353 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 22:18:08,353 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 22:18:08,354 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 22:18:08,355 - GalPaK - INFO -  Running galpak 1.34.0
+2024-07-29 22:19:40,020 - GalPaK: PSF - WARNING - Package "maoppy" is not installed [not required]. Cannot use MAOPPY PSF model.
+2024-07-29 22:19:40,025 - GalPaK: Plots - INFO - bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:19:40,042 - GalPaK - INFO -  bottleneck (optional) not installed, performances will be degraded
+2024-07-29 22:19:40,043 - GalPaK - INFO -  PyFFTW (optional) not installed, performances will be degraded
+2024-07-29 22:19:40,043 - GalPaK - WARNING -  MPDAF (optional) not installed / not required
+2024-07-29 22:19:40,043 - GalPaK - INFO - Found EMCEE version 3.1.6
+2024-07-29 22:19:40,043 - GalPaK - WARNING - EMCEE tested for version > 3.0
+2024-07-29 22:19:40,043 - GalPaK - INFO - Found Dynesty version 2.1.2 
+ EXPERIMENTAL and UNSUPPORTED
+2024-07-29 22:19:40,043 - GalPaK - WARNING -  PyMultinest (optional) not installed / not required. 
+2024-07-29 22:19:40,044 - GalPaK - INFO -  Running galpak 1.34.0
