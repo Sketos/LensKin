@@ -1,0 +1,50 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.nest.dynesty.search.static.DynestyStatic",
+    "arguments": {
+        "walks": 5,
+        "enlarge": null,
+        "unique_tag": null,
+        "bootstrap": null,
+        "max_move": 100,
+        "facc": 0.2,
+        "name": "lens[fixed]_source[GalPaK]",
+        "sample": "rwalk",
+        "slices": 5,
+        "nlive": 20,
+        "number_of_cores": 1,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerPrior",
+            "arguments": {}
+        },
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "bound": "multi",
+        "fmove": 0.9,
+        "iterations_per_update": 500,
+        "inplace": false,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "parent": null,
+                "unique_tag": null,
+                "name": "lens[fixed]_source[GalPaK]",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "tutorial"
+                },
+                "identifier": "9b1185d7dcd17307786bcdd2be259be4",
+                "is_identifier_in_paths": true
+            }
+        },
+        "path_prefix": {
+            "type": "path",
+            "path": "tutorial"
+        },
+        "use_gradient": false
+    }
+}

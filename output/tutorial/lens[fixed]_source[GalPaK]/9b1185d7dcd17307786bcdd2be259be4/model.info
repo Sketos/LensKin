@@ -1,0 +1,19 @@
+Total Free Parameters = 2
+
+model                                                                           Collection (N=2)
+    galaxies                                                                    Collection (N=2)
+        source                                                                  GalPaK (N=2)
+
+galaxies
+    source
+        centre
+            centre_0                                                            GaussianPrior [0], mean = 0.0, sigma = 0.5
+            centre_1                                                            GaussianPrior [1], mean = 0.0, sigma = 0.5
+        z_centre                                                                8.0
+        intensity                                                               1.0
+        effective_radius                                                        0.2
+        inclination                                                             65.0
+        phi                                                                     90.0
+        turnover_radius                                                         0.05
+        maximum_velocity                                                        250.0
+        velocity_dispersion                                                     50.0

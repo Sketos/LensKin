@@ -244,7 +244,7 @@ class Analysis(af.Analysis):
         print("----------------")
         print("----------------")
 
-        # self.visualizer.visualize(
+        # Visualizer.visualize(
         #     analysis=self,
         #     paths=paths,
         #     instance=instance,

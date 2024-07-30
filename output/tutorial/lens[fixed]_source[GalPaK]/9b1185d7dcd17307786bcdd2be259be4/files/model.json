@@ -1,0 +1,45 @@
+{
+    "type": "collection",
+    "arguments": {
+        "galaxies": {
+            "type": "collection",
+            "arguments": {
+                "source": {
+                    "class_path": "src.model.profiles.GalPaK",
+                    "type": "model",
+                    "arguments": {
+                        "centre": {
+                            "type": "tuple_prior",
+                            "arguments": {
+                                "centre_0": {
+                                    "lower_limit": -Infinity,
+                                    "upper_limit": Infinity,
+                                    "type": "Gaussian",
+                                    "id": 0,
+                                    "mean": 0.0,
+                                    "sigma": 0.5
+                                },
+                                "centre_1": {
+                                    "lower_limit": -Infinity,
+                                    "upper_limit": Infinity,
+                                    "type": "Gaussian",
+                                    "id": 1,
+                                    "mean": 0.0,
+                                    "sigma": 0.5
+                                }
+                            }
+                        },
+                        "z_centre": 8.0,
+                        "intensity": 1.0,
+                        "effective_radius": 0.2,
+                        "inclination": 65.0,
+                        "phi": 90.0,
+                        "turnover_radius": 0.05,
+                        "maximum_velocity": 250.0,
+                        "velocity_dispersion": 50.0
+                    }
+                }
+            }
+        }
+    }
+}
