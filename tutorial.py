@@ -11,7 +11,7 @@ from astropy.io import fits
 
 
 # NOTE:
-import autofit as af#;print(af.__version__);exit()
+import autofit as af;print(af.__version__);exit()
 af.conf.instance.push(
     new_path="./config", output_path="./output"
 )
