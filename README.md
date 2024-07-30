@@ -1,6 +1,6 @@
 # LensKin
 
-pip install autofit
-pip install autolens
-pip install pynufft
-pip install galpak
+pip install autofit <br>
+pip install autolens <br>
+pip install pynufft <br>
+pip install galpak <br>
