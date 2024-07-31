@@ -15,7 +15,6 @@ if server == "cosma7":
     matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-
 def output_path_from(server="local"):
 
     if server == "local":
@@ -28,16 +27,15 @@ def output_path_from(server="local"):
     else:
         raise NotImplementedError()
 
-    return config_path, output_path
+    return output_path
 
 # NOTE:
 import autofit as af
 output_path = output_path_from(
     server=server
 )
-af.conf.instance = af.conf.Config(
-    config_path="./config",
-    output_path=output_path
+af.conf.instance.push(
+    new_path="./config", output_path=output_path
 )
 import autolens as al
 
@@ -57,7 +55,8 @@ from src.model import (
     profiles,
 )
 from src.utils import (
-    autolens_utils,
+    spectral_utils as spectral_utils,
+    autolens_utils as autolens_utils,
 )
 from src.analysis import (
     analysis,
@@ -69,18 +68,8 @@ from src.analysis import (
 # NOTE:
 n_pixels = 128
 pixel_scale = 0.0390625
-grid_2d = al.Grid.uniform(
-    shape_2d=(
-        n_pixels,
-        n_pixels
-    ),
-    pixel_scales=(
-        pixel_scale,
-        pixel_scale
-    ),
-    sub_size=1
-)
 
+# NOTE:
 redshift_lens = 0.5
 redshift_source = 2.0
 
@@ -180,8 +169,9 @@ if __name__ == "__main__":
     #exit()
 
     # NOTE:
-    grid_3d = Grid3D(
-        grid_2d=grid_2d,
+    grid_3d = Grid3D.uniform(
+        n_pixels=n_pixels,
+        pixel_scale=pixel_scale,
         n_channels=len(frequencies)
     )
 
@@ -205,28 +195,28 @@ if __name__ == "__main__":
 
     # ======================================================================== #
 
-    key = "parametric[1]"
-    #key = "inversion[0]"
+    #key = "parametric[1]"
+    key = "inversion[0]"
     if key == "parametric[1]":
-        mass_centre_0 = 0.081
-        mass_centre_1 = -0.054
-        mass_einstein_radius = 0.509
-        mass_elliptical_comps_0 = -0.190
-        mass_elliptical_comps_1 = -0.018
-        mass_slope_mean = 2.0
-        shear_elliptical_comps_0 = -0.001
-        shear_elliptical_comps_1 = 0.075
-    elif key == "inversion[0]":
-        # # NOTE: ML
-        # mass_centre_0 = None
-        # mass_centre_1 = None
-        # mass_einstein_radius = None
-        # mass_elliptical_comps_0 = None
-        # mass_elliptical_comps_1 = None
-        # mass_slope = 2.0
-        # shear_elliptical_comps_0 = None
-        # shear_elliptical_comps_1 = None
         raise NotImplementedError()
+        # mass_centre_0 = 0.081
+        # mass_centre_1 = -0.054
+        # mass_einstein_radius = 0.509
+        # mass_elliptical_comps_0 = -0.190
+        # mass_elliptical_comps_1 = -0.018
+        # mass_slope_mean = 2.0
+        # shear_elliptical_comps_0 = -0.001
+        # shear_elliptical_comps_1 = 0.075
+    elif key == "inversion[0]":
+        # NOTE: ML
+        mass_centre_0 = 0.099
+        mass_centre_1 = -0.067
+        mass_einstein_radius = 0.514
+        mass_elliptical_comps_0 = -0.184
+        mass_elliptical_comps_1 = -0.052
+        mass_slope = 2.0
+        shear_elliptical_comps_0 = -0.001
+        shear_elliptical_comps_1 = 0.067
     else:
         raise NotImplementedError()
     mass = al.mp.PowerLaw(
@@ -242,12 +232,10 @@ if __name__ == "__main__":
         slope=mass_slope,
     )
     shear = al.mp.ExternalShear(
-        ell_comps=(
-            shear_elliptical_comps_0,
-            shear_elliptical_comps_1,
-        ),
+        gamma_1=shear_elliptical_comps_0,
+        gamma_2=shear_elliptical_comps_1,
     )
-    tracer = al.Tracer.from_galaxies(
+    tracer = al.Tracer(
         galaxies=[
             al.Galaxy(
                 redshift=redshift_lens,
@@ -263,16 +251,16 @@ if __name__ == "__main__":
 
     # ======================================================================== #
 
-    name = "HERMES_J021830.5-053124/phase_{}".format(key)
-    # os.system(
-    #     "rm -r output/{}".format(name)
-    # )
+    # NOTE:
+    path_prefix = "HERMES_J021830.5-053124"
 
     # NOTE:
+    name = "phase_{}".format(key)
+
+    # NOTE:
+    source = af.Model(profiles.GalPaK)
     model = af.Collection(
-        galaxies=af.Collection(
-            source=af.Model(profiles.GalPaK)
-        )
+        galaxies=af.Collection(source=source)
     )
     # model.galaxies.maximum_velocity = af.UniformPrior(
     #     lower_limit=0.0,
@@ -283,7 +271,9 @@ if __name__ == "__main__":
     search = af.DynestyStatic(
         path_prefix=path_prefix,
         name=name,
+        nlive=200,
         sample="rwalk",
+        number_of_cores=1,
     )
 
     # NOTE:
@@ -310,5 +300,3 @@ if __name__ == "__main__":
     )
 
     # ======================================================================== #
-
-    

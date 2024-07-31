@@ -7,14 +7,13 @@ try:
 except:
     print("\'autolens\' could not be imported")
 
-# ---------------------------------------------------------------------------- #
+# NOTE:
 # from src.grid.grid import (
 #     Grid3D,
 # )
 from src.mask.mask import (
     Mask3D,
 )
-# ---------------------------------------------------------------------------- #
 
 
 def transformers_from(
@@ -32,6 +31,7 @@ def transformers_from(
         transformers.append(transformer)
 
     return transformers
+
 
 class Image:
     def __init__(self, array_2d):

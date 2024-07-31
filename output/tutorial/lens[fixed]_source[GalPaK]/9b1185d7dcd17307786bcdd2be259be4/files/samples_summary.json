@@ -2,16 +2,33 @@
     "type": "instance",
     "class_path": "autofit.non_linear.samples.summary.SamplesSummary",
     "arguments": {
-        "errors_at_sigma_3": {
+        "median_pdf_sample": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.samples.sample.Sample",
+            "arguments": {
+                "log_likelihood": -757152.191799409,
+                "log_prior": 0.07865953430155352,
+                "weight": 1.0,
+                "kwargs": {
+                    "type": "dict",
+                    "arguments": {
+                        "galaxies.source.centre.centre_0": 0.016325052843063906,
+                        "galaxies.source.centre.centre_1": 0.19764427591116301
+                    }
+                }
+            }
+        },
+        "log_evidence": -757158.9056690416,
+        "errors_at_sigma_1": {
             "type": "list",
             "values": [
                 [
-                    0.9184161050932989,
-                    1.2428459433280252
+                    1.4904126100480282,
+                    1.2537006875976984
                 ],
                 [
-                    1.4810164866131168,
-                    1.0122886768556618
+                    1.845152529594245,
+                    1.7251572868486686
                 ]
             ]
         },
@@ -19,73 +36,56 @@
             "type": "instance",
             "class_path": "autofit.non_linear.samples.sample.Sample",
             "arguments": {
-                "log_likelihood": -756704.466986317,
-                "log_prior": 0.08259717894354851,
+                "log_likelihood": -757152.191799409,
+                "log_prior": 0.07865953430155352,
                 "weight": 1.0,
                 "kwargs": {
                     "type": "dict",
                     "arguments": {
-                        "galaxies.source.centre.centre_0": 0.020800081689875714,
-                        "galaxies.source.centre.centre_1": 0.20215327371444855
+                        "galaxies.source.centre.centre_0": 0.016325052843063906,
+                        "galaxies.source.centre.centre_1": 0.19764427591116301
                     }
                 }
             }
-        },
-        "errors_at_sigma_1": {
-            "type": "list",
-            "values": [
-                [
-                    0.9184161050932989,
-                    1.2428459433280252
-                ],
-                [
-                    1.4810164866131168,
-                    1.0122886768556618
-                ]
-            ]
         },
         "values_at_sigma_3": {
             "type": "list",
             "values": [
                 [
-                    -0.8976160234034232,
-                    1.263646025017901
+                    -1.4740875572049643,
+                    1.2700257404407622
                 ],
                 [
-                    -1.2788632128986683,
-                    1.2144419505701103
+                    -1.647508253683082,
+                    1.9228015627598316
                 ]
             ]
-        },
-        "median_pdf_sample": {
-            "type": "instance",
-            "class_path": "autofit.non_linear.samples.sample.Sample",
-            "arguments": {
-                "log_likelihood": -756704.466986317,
-                "log_prior": 0.08259717894354851,
-                "weight": 1.0,
-                "kwargs": {
-                    "type": "dict",
-                    "arguments": {
-                        "galaxies.source.centre.centre_0": 0.020800081689875714,
-                        "galaxies.source.centre.centre_1": 0.20215327371444855
-                    }
-                }
-            }
         },
         "values_at_sigma_1": {
             "type": "list",
             "values": [
                 [
-                    -0.8976160234034232,
-                    1.263646025017901
+                    -1.4740875572049643,
+                    1.2700257404407622
                 ],
                 [
-                    -1.2788632128986683,
-                    1.2144419505701103
+                    -1.647508253683082,
+                    1.9228015627598316
                 ]
             ]
         },
-        "log_evidence": -756711.0832756213
+        "errors_at_sigma_3": {
+            "type": "list",
+            "values": [
+                [
+                    1.4904126100480282,
+                    1.2537006875976984
+                ],
+                [
+                    1.845152529594245,
+                    1.7251572868486686
+                ]
+            ]
+        }
     }
 }

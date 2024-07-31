@@ -7,14 +7,13 @@ try:
 except:
     print("\'autolens\' could not be imported")
 
-# ---------------------------------------------------------------------------- #
-# path = os.environ["GitHub"] + "{}/tutorials/autofit/tutorial_13"
-# sys.path.append(path)
-# ---------------------------------------------------------------------------- #
+# NOTE:
+from src.utils import (
+    autoarray_utils as autoarray_utils,
+)
 
 
 def func(mask_2d):
-
     return mask_2d
 
 
@@ -31,7 +30,7 @@ class AbstractMask3D:
 class Mask3D(AbstractMask3D):
     def __init__(
         self,
-        mask_2d: AutoArrayObj,
+        mask_2d: autoarray_utils.AutoArrayObj,
         z_mask: np.ndarray
     ):
 

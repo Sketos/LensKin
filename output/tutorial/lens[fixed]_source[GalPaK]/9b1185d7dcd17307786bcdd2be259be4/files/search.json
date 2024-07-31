@@ -2,49 +2,49 @@
     "type": "instance",
     "class_path": "autofit.non_linear.search.nest.dynesty.search.static.DynestyStatic",
     "arguments": {
-        "walks": 5,
-        "enlarge": null,
-        "unique_tag": null,
+        "inplace": false,
+        "path_prefix": {
+            "type": "path",
+            "path": "tutorial"
+        },
         "bootstrap": null,
-        "max_move": 100,
+        "enlarge": null,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "is_identifier_in_paths": true,
+                "identifier": "9b1185d7dcd17307786bcdd2be259be4",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "tutorial"
+                },
+                "unique_tag": null,
+                "parent": null,
+                "name": "lens[fixed]_source[GalPaK]"
+            }
+        },
         "facc": 0.2,
         "name": "lens[fixed]_source[GalPaK]",
         "sample": "rwalk",
+        "fmove": 0.9,
         "slices": 5,
-        "nlive": 20,
+        "use_gradient": false,
+        "walks": 5,
+        "iterations_per_update": 500,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
         "number_of_cores": 1,
+        "unique_tag": null,
         "initializer": {
             "type": "instance",
             "class_path": "autofit.non_linear.initializer.InitializerPrior",
             "arguments": {}
         },
-        "initial_values": {
-            "type": "dict",
-            "arguments": {}
-        },
+        "nlive": 20,
         "bound": "multi",
-        "fmove": 0.9,
-        "iterations_per_update": 500,
-        "inplace": false,
-        "paths": {
-            "type": "instance",
-            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
-            "arguments": {
-                "parent": null,
-                "unique_tag": null,
-                "name": "lens[fixed]_source[GalPaK]",
-                "path_prefix": {
-                    "type": "path",
-                    "path": "tutorial"
-                },
-                "identifier": "9b1185d7dcd17307786bcdd2be259be4",
-                "is_identifier_in_paths": true
-            }
-        },
-        "path_prefix": {
-            "type": "path",
-            "path": "tutorial"
-        },
-        "use_gradient": false
+        "max_move": 100
     }
 }

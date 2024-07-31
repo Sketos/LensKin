@@ -50,7 +50,7 @@ def model_data_from_cube_and_transformers(
 
 class Analysis(af.Analysis):
 
-    Visualizer = visualizer.Visualizer
+    #Visualizer = visualizer.Visualizer # NOTE: THIS IS NOT WORKING
 
     def __init__(
         self,
@@ -71,12 +71,11 @@ class Analysis(af.Analysis):
         else:
             raise NotImplementedError()
 
-        # # NOTE:
-        # self.visualizer = visualizer.Visualizer(
-        #     masked_dataset=self.masked_dataset,
-        #     transformers=self.transformers,
-        #     image_path=image_path
-        # )
+        # NOTE:
+        self.visualizer = visualizer.VisualizerAbstract(
+            masked_dataset=self.masked_dataset,
+            transformers=self.transformers,
+        )
 
 
     def log_likelihood_function(self, instance):
@@ -136,45 +135,46 @@ class Analysis(af.Analysis):
     ) -> np.ndarray:
 
         """
-        # ---------- #
-        # TODO: The instance can be a mass (model) + source (model). If so, use
-        # the mass (model) to create the tracer and the source (model) to create
-        # the model_cube...
-        # ---------- #
-        # NOTE:
-        for profile in instance.profiles:
-            print(type(profile), isinstance(profile, al.mp.MassProfile))
-            # if profile.has_mass_profile:
-            #     print("OK", profile.mass_profiles)
-        # galaxies = [
-        #     profile for profile in instance.profiles if isinstance(profile, al.mp.MassProfile)
-        # ]
-        # print(galaxies)
-        # galaxies.append(
-        #     al.Galaxy(
-        #         redshift=self.masked_dataset.redshift_source,
-        #         light=al.lp.LightProfile()
-        #     )
-        # )
-        # tracer = al.Tracer.from_galaxies(
-        #     galaxies=galaxies
-        # )
-        exit()
-        """
-        # ---------- #
-        # END
-        # ---------- #
-
-
         # NOTE:
         # t_i = time.time()
-        model_cube = self.model_cube_from_instance(
-            instance=instance
-        )
+        if np.any([
+            isinstance(galaxy, al.mp.MassProfile) for galaxy in instance.galaxies
+        ]):
+            galaxies = [
+                galaxy for galaxy in instance.galaxies if isinstance(galaxy, al.mp.MassProfile)
+            ]
+            galaxies.append(
+                al.Galaxy(
+                    redshift=self.masked_dataset.redshift_source,
+                    light=al.LightProfile()
+                )
+            )
+            tracer = al.Tracer(
+                galaxies=galaxies
+            )
+
+            source_galaxies = [
+                galaxy for galaxy in instance.galaxies if isinstance(galaxy, al.LightProfile)
+            ]
+            if len(source_galaxies) == 1:
+                model_cube = self.model_cube_from_instance(
+                    instance=source_galaxies[0],
+                )
+            else:
+                raise NotImplementedError()
+        else:
+            model_cube = self.model_cube_from_instance(
+                instance=instance
+            )
         # t_j = time.time()
         # print(
         #     "It took t={} to execute the \'model_cube_from_instance\'".format(t_j - t_i)
         # )
+        """
+
+        model_cube = self.model_cube_from_instance(
+            instance=instance
+        )
 
         # NOTE:
         # t_i = time.time()
@@ -188,15 +188,6 @@ class Analysis(af.Analysis):
         # print(
         #     "It took t={} to execute the \'lensed_cube_from_tracer\'".format(t_j - t_i)
         # )
-
-        # NOTE: Debugging visualization
-        # plot_utils.plot_cube(
-        #     cube=lensed_model_cube,
-        #     ncols=5,
-        #     figsize=(6.75, 8.15),
-        #     show=False
-        # )
-        # # exit()
 
         # NOTE:
         # t_i = time.time()
@@ -222,31 +213,15 @@ class Analysis(af.Analysis):
         )
 
 
-    # def visualize(self, instance, during_analysis):
-    #
-    #     model_data = self.model_data_from_instance(
-    #         instance=instance
-    #     )
-    #     fit = self.fit_from_model_data(
-    #         model_data=model_data
-    #     )
-    #
-    #     self.visualizer.visualize_fit(
-    #         fit=fit,
-    #         during_analysis=during_analysis
-    #     )
-
-
     def visualize(self, paths, instance, during_analysis):
-        print("----------------")
-        print("----------------")
-        print("----- HERE -----")
-        print("----------------")
-        print("----------------")
 
-        # Visualizer.visualize(
-        #     analysis=self,
-        #     paths=paths,
-        #     instance=instance,
-        #     during_analysis=during_analysis,
-        # )
+        if self.visualizer.directory is None:
+            self.visualizer.update(directory=paths.image_path)
+
+        model_data = self.model_data_from_instance(
+            instance=instance
+        )
+        self.visualizer.visualize(
+            model_data=model_data,
+            during_analysis=during_analysis,
+        )

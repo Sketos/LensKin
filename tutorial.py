@@ -1,7 +1,5 @@
 import os, sys
 import numpy as np
-import matplotlib.pyplot as plt
-
 
 # NOTE:
 from astropy import (
@@ -10,11 +8,30 @@ from astropy import (
 )
 from astropy.io import fits
 
+# NOTE:
+server = sys.argv[1]
+if server == "cosma7":
+    import matplotlib
+    matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+def output_path_from(server="local"):
+    if server == "local":
+        output_path = "./output"
+    elif server == "cosma7":
+        output_path = "/cosma7/data/dp004/dc-amvr1/PyLensKin/output/"
+    else:
+        raise NotImplementedError()
+
+    return output_path
 
 # NOTE:
 import autofit as af#;print(af.__version__);exit()
+output_path = output_path_from(
+    server=server
+)
 af.conf.instance.push(
-    new_path="./config", output_path="./output"
+    new_path="./config", output_path=output_path
 )
 try:
     import autolens as al
@@ -40,7 +57,8 @@ from src.utils import (
     spectral_utils as spectral_utils,
     plot_utils as plot_utils,
     analysis_utils as analysis_utils,
-    autolens_utils as autolens_utils
+    autolens_utils as autolens_utils,
+    kinms_utils as kinms_utils,
 )
 from src.analysis import (
     analysis,
@@ -76,11 +94,15 @@ def load_uv_wavelengths(
 n_pixels = 64
 pixel_scale = 0.1
 
+# # NOTE: DELETE
+# n_pixels = 128
+# pixel_scale = 0.01
+
 n_channels = 16
 #n_channels = 64
 
-lens_redshift = 0.5
-source_redshift = 2.0
+redshift_lens = 0.5
+redshift_source = 2.0
 
 # NOTE:
 central_frequency = 260.0 * units.GHz
@@ -88,6 +110,18 @@ central_frequency = 260.0 * units.GHz
 # NOTE:
 transformer_class = al.TransformerNUFFT
 #transformer_class = al.TransformerDFT
+
+# NOTE:
+modelname = "GalPaK"
+#modelname = "KinMS"
+
+# NOTE:
+extent = [
+    -n_pixels * pixel_scale / 2.0,
+    n_pixels * pixel_scale / 2.0,
+    -n_pixels * pixel_scale / 2.0,
+    n_pixels * pixel_scale / 2.0,
+]
 
 if __name__ == "__main__":
 
@@ -110,26 +144,74 @@ if __name__ == "__main__":
     )
 
     # NOTE:
-    model_default = profiles.GalPaK(
-        centre=(0.0, 0.2),
-        z_centre=grid_3d.n_channels / 2.0,
-        intensity=1.0,
-        effective_radius=0.2,
-        inclination=65.0,
-        phi=90.0,
-        turnover_radius=0.05,
-        maximum_velocity=250.0,
-        velocity_dispersion=50.0
-    )
+    centre = (0.0, 0.2)
+    if modelname == "GalPaK":
+        model_default = profiles.GalPaK(
+            centre=centre,
+            z_centre=grid_3d.n_channels / 2.0,
+            intensity=1.0,
+            effective_radius=0.2,
+            inclination=65.0,
+            phi=90.0,
+            turnover_radius=0.05,
+            maximum_velocity=250.0,
+            velocity_dispersion=50.0,
+        )
+    elif modelname == "KinMS":
+        raise NotImplementedError()
+        # model_default = profiles.kinMS(
+        #     centre=centre,
+        #     z_centre=grid_3d.n_channels / 2.0,
+        #     intensity=1.0,
+        #     effective_radius=0.2,
+        #     inclination=65.0,
+        #     phi=90.0,
+        #     turnover_radius=0.05,
+        #     maximum_velocity=250.0,
+        #     velocity_dispersion=50.0,
+        #     vmax_black_hole=0.0,
+        # )
+    else:
+        raise NotImplementedError()
+    if isinstance(model_default, profiles.kinMS):
+        instance = kinms_utils.make_instance_from_grid(
+            grid_3d=grid_3d,
+            z_step_kms=z_step_kms,
+        )
+    else:
+        instance = None
     cube = model_default.profile_cube_from_grid(
         grid_3d=grid_3d,
-        z_step_kms=z_step_kms
+        z_step_kms=z_step_kms,
+        instance=instance
     )
     # figure, axes = plot_utils.plot_cube(
     #     cube=cube,
     # )
     # plt.show()
     # exit()
+
+    """# NOTE: DELETE
+    cube_summed = np.sum(cube, axis=0)
+    plt.figure()
+    plt.imshow(
+        cube_summed,
+        cmap="jet",
+        extent=extent
+    )
+    plt.plot(
+        [model_default.centre[1]],
+        [model_default.centre[0]],
+        marker="o",
+        color="w"
+    )
+    plt.axvline(model_default.centre[1], linestyle="--", color="w")
+    plt.axhline(model_default.centre[0], linestyle="--", color="w")
+    plt.axvline(0.0, linestyle=":", color="w")
+    plt.axhline(0.0, linestyle=":", color="w")
+    plt.show()
+    exit()
+    """
 
     # NOTE:
     lens_mass_profile = al.mp.PowerLaw(
@@ -141,11 +223,11 @@ if __name__ == "__main__":
     tracer = al.Tracer(
         galaxies=[
             al.Galaxy(
-                redshift=lens_redshift,
+                redshift=redshift_lens,
                 mass=lens_mass_profile,
             ),
             al.Galaxy(
-                redshift=source_redshift,
+                redshift=redshift_source,
                 light=al.LightProfile()
             )
         ]
@@ -240,7 +322,9 @@ if __name__ == "__main__":
             visibilities, noise
         ),
         noise_map=noise_map,
-        z_step_kms=z_step_kms
+        z_step_kms=z_step_kms,
+        redshift_lens=redshift_lens,
+        redshift_source=redshift_source,
     )
     # dirty_cube = autolens_utils.dirty_cube_from(
     #     visibilities=dataset.visibilities,
@@ -277,6 +361,19 @@ if __name__ == "__main__":
     # --- #
     # NOTE:
     # --- #
+    # model = af.Model(profiles.GalPaK)
+    # instance = model.instance_from_vector(
+    #     vector=[0.0, 0.2, grid_3d.n_channels / 2.0, 1.0, 0.2, 65.0, 90.0, 0.05, 250.0, 50.0]
+    # )
+    # analysis_lens_instance.visualize(paths="./", instance=instance, during_analysis=True)
+    # exit()
+    # --- #
+    # END
+    # --- #
+
+    # --- #
+    # NOTE:
+    # --- #
     """
     model = af.Model(profiles.GalPaK)
     array = np.linspace(0.0, 100.0, 50)
@@ -297,10 +394,14 @@ if __name__ == "__main__":
     # --- #
 
     # NOTE:
+    if modelname == "GalPaK":
+        source = af.Model(profiles.GalPaK)
+    elif modelname == "KinMS":
+        source = af.Model(profiles.kinMS)
+    else:
+        raise NotImplementedError()
     model = af.Collection(
-        galaxies=af.Collection(
-            source=af.Model(profiles.GalPaK)
-        )
+        galaxies=af.Collection(source=source)
     )
     model.galaxies.source.maximum_velocity = model_default.maximum_velocity
     model.galaxies.source.z_centre = model_default.z_centre
@@ -316,8 +417,32 @@ if __name__ == "__main__":
     #     upper_limit=600.0,
     # )
 
+
+    # --- #
+    # NOTE: DEV
+    # --- #
+    """
+    lens = af.Model(
+        al.Galaxy,
+        redshift=redshift_lens,
+        mass=al.mp.PowerLaw,
+    )
+    print(lens.has(cls=al.mp.MassProfile));exit()
+    model = af.Collection(
+        galaxies=af.Collection(lens=lens, source=source)
+    )
+    """
+    # --- #
+    # END
+    # --- #
+
     # NOTE:
-    name = "lens[fixed]_source[GalPaK]"
+    if modelname == "GalPaK":
+        name = "lens[fixed]_source[GalPaK]"
+    elif modelname == "KinMS":
+        name = "lens[fixed]_source[KinMS]"
+    else:
+        raise NotImplementedError()
     if os.path.isdir(
         "./output/tutorial/{}".format(name)
     ):

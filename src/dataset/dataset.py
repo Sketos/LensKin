@@ -7,56 +7,13 @@ try:
 except:
     print("\'autolens\' could not be imported")
 
-# ---------------------------------------------------------------------------- #
+# NOTE:
 from src.grid.grid import (
     Grid3D,
 )
 from src.mask.mask import (
     Mask3D,
 )
-# ---------------------------------------------------------------------------- #
-
-
-# NOTE:
-def make_kinms_instance(
-    n_pixels: int,
-    pixel_scale: float,
-    n_channels: int,
-    z_step_kms: float,
-    nSamps=5e6,
-):
-
-    # NOTE
-    try:
-        from kinms import KinMS
-    except:
-        raise NotImplementedError()
-
-    return KinMS(
-        xs=n_pixels * pixel_scale,
-        ys=n_pixels * pixel_scale,
-        vs=n_channels * z_step_kms,
-        cellSize=pixel_scale,
-        dv=z_step_kms,
-        beamSize=None,
-        cleanOut=True,
-        nSamps=nSamps
-    )
-
-
-# NOTE:
-def make_instance_from_masked_dataset(
-    masked_dataset,
-    nSamps=5e6,
-):
-
-    return make_kinms_instance(
-        n_pixels=masked_dataset.n_pixels,
-        pixel_scale=masked_dataset.pixel_scale,
-        n_channels=masked_dataset.n_channels,
-        z_step_kms=masked_dataset.z_step_kms,
-        nSamps=nSamps,
-    )
 
 
 # NOTE: ...
@@ -78,7 +35,8 @@ class Dataset:
         visibilities: np.ndarray,
         noise_map: np.ndarray,
         z_step_kms: float=None,
-        redshift_source: float=2.0
+        redshift_lens: float=0.5,
+        redshift_source: float=2.0,
     ):
 
         # NOTE: shape = (n_c, n_v, 2)
@@ -87,6 +45,8 @@ class Dataset:
         # NOTE:
         if visibilities.shape[0] == self.uv_wavelengths.shape[0]:
             self.visibilities = visibilities
+        else:
+            raise NotImplementedError()
 
         # NOTE: shape = (n_c, n_v, 2)
         self.noise_map = noise_map
@@ -95,6 +55,7 @@ class Dataset:
         self.z_step_kms = z_step_kms
 
         # NOTE:
+        self.redshift_lens = redshift_lens
         self.redshift_source = redshift_source
 
     @property
@@ -108,9 +69,7 @@ class MaskedDataset:
         dataset: Dataset,
         mask_3d: Mask3D=None,
         uv_mask: np.ndarray=None,
-        grid_2d_dx: float=0.0, # NOTE: DELETE
-        grid_2d_dy: float=0.0, # NOTE: DELETE
-        condition=False,
+        instance=None,
     ):
 
         self.dataset = dataset
@@ -153,19 +112,11 @@ class MaskedDataset:
         self.z_step_kms = dataset.z_step_kms
 
         # NOTE:
+        self.redshift_lens = dataset.redshift_lens
         self.redshift_source = dataset.redshift_source
 
         # NOTE:
-        if condition:
-            self.instance = make_instance_from_masked_dataset(
-                masked_dataset=self,
-            )
-            # self.x = np.logspace(
-            #     np.log10(self.pixel_scale / 5.0), np.log10(self.n_pixels * self.pixel_scale * 2.0), 10000
-            # )
-        else:
-            self.instance = None
-            #self.x = None
+        self.instance = instance
 
 
     @property

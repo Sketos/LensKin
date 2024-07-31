@@ -26,7 +26,7 @@ def traced_grids_of_planes_from(
 def ray_trace(
     traced_grids_of_planes,
     image: np.ndarray,
-    #interpolator=None,
+    #interpolator=interpolate.RegularGridInterpolator,
 ):
 
     traced_grid_i = traced_grids_of_planes[0] # This is the regular grid.
@@ -54,9 +54,6 @@ def ray_trace(
     # NOTE:
     x_interp = np.unique(traced_grid_i[:, 0])
     y_interp = np.unique(traced_grid_i[:, 1])
-    # # NOTE: MADE A CHANGE HERE!
-    # x_interp = np.unique(grid[:, 0])
-    # y_interp = np.unique(grid[:, 1])
 
     # NOTE:
     image_interp = interpolate.RegularGridInterpolator(

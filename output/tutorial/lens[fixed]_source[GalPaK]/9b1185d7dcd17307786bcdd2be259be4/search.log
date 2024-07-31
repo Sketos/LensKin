@@ -2,24 +2,24 @@ Starting new Dynesty non-linear search (no previous samples found).
 Generating initial samples of model, which are subject to prior limits and other constraints. Using 1 cores.
 Creating pool with 1 processes
 created
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
-Running 1 jobs across [<SneakyProcess name='0' pid=14550 parent=14538 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
+Running 1 jobs across [<SneakyProcess name='0' pid=18275 parent=18268 started>] processes
 Fit Running: Updating results after 500 iterations (see output folder).

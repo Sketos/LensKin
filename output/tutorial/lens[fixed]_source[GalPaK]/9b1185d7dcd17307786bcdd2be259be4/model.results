@@ -1,0 +1,41 @@
+Bayesian Evidence                                                               -757158.90566904
+Maximum Log Likelihood                                                          -757152.19179941
+Maximum Log Posterior                                                           -757152.11313987
+
+model                                                                           Collection (N=2)
+    galaxies                                                                    Collection (N=2)
+        source                                                                  GalPaK (N=2)
+
+Maximum Log Likelihood Model:
+
+galaxies
+    source
+        centre
+            centre_0                                                            0.016
+            centre_1                                                            0.198
+
+ WARNING: The samples have not converged enough to compute a PDF and model errors. 
+ The model below over estimates errors. 
+
+
+
+Summary (1.0 sigma limits):
+
+galaxies
+    source
+        centre
+            centre_0                                                            0.0163 (-1.4741, 1.2700)
+            centre_1                                                            0.1976 (-1.6475, 1.9228)
+
+instances
+
+galaxies
+    source
+        z_centre                                                                8.0
+        intensity                                                               1.0
+        effective_radius                                                        0.2
+        inclination                                                             65.0
+        phi                                                                     90.0
+        turnover_radius                                                         0.05
+        maximum_velocity                                                        250.0
+        velocity_dispersion                                                     50.0

@@ -12,16 +12,16 @@ except:
     print("\'galpak\' could not be imported")
 
 
+# ============================================================================ #
+# ============================================================================ #
+
 class Abstract(al.LightProfile):
     def __init__(self):
         pass
 
-# ============================================================================ #
-# ============================================================================ #
 
 class GalPaK(Abstract):
 
-    #@af.map_types
     def __init__(
         self,
         centre = (0.0, 0.0),
@@ -54,7 +54,7 @@ class GalPaK(Abstract):
         pixel_scale,
         n_pixels,
     ):
-        return value / pixel_scale + n_pixels / 2.0
+        return value / pixel_scale + n_pixels / 2.0 - 0.5
 
 
     # NOTE:
@@ -96,6 +96,7 @@ class GalPaK(Abstract):
         for i, (name, value) in enumerate(
             self.__dict__.items()
         ):
+            #print(name)
             if name not in ["id", "_assertions", "cls"]:
 
                 if name == "centre":
@@ -114,11 +115,11 @@ class GalPaK(Abstract):
                                 n_pixels=grid_3d.n_pixels,
                             )
                         )
-                elif name.endswith("radius"):
+                elif name in ["effective_radius", "turnover_radius"]:
                     converted_parameters.append(
                         self.convert_radius_from_arcsec_to_pixels(
                             value=value,
-                            pixel_scale=grid_3d.pixel_scale
+                            pixel_scale=grid_3d.pixel_scale,
                         )
                     )
                 else:
@@ -140,7 +141,8 @@ class GalPaK(Abstract):
     def profile_cube_from_grid(
         self,
         grid_3d,
-        z_step_kms: float
+        z_step_kms: float,
+        instance=None,
     ):
 
         # NOTE: ...
@@ -169,11 +171,12 @@ class GalPaK(Abstract):
         return self.profile_cube_from_grid(
             grid_3d=masked_dataset.grid_3d,
             z_step_kms=masked_dataset.z_step_kms,
+            instance=masked_dataset.instance,
         )
 
 # ============================================================================ #
 # ============================================================================ #
-"""
+
 class kinMS(Abstract):
 
     def __init__(
@@ -257,25 +260,35 @@ class kinMS(Abstract):
     # NOTE: ...
     def profile_cube_from_grid(
         self,
-        x,
-        instance, # NOTE: This is unique to kinMS
+        grid_3d,
+        z_step_kms: float,
+        instance=None,
     ):
 
-        return self.make_model(instance, x)
+        if instance is None:
+            raise NotImplementedError()
+
+        return self.make_model(instance=instance.obj, x=instance.x)
 
     # NOTE: ...
     def profile_cube_from_masked_dataset(
         self,
         masked_dataset
     ):
-        log_xmin = np.log10(masked_dataset.pixel_scale / 5.0)
-        log_xmax = np.log10(masked_dataset.pixel_scale * 2.0 * masked_dataset.n_pixels)
-        x = np.logspace(
-            log_xmin, log_xmax, 10000
-        )
+        # log_xmin = np.log10(masked_dataset.pixel_scale / 5.0)
+        # log_xmax = np.log10(masked_dataset.pixel_scale * 2.0 * masked_dataset.n_pixels)
+        # x = np.logspace(
+        #     log_xmin, log_xmax, 10000
+        # )
+        # return self.profile_cube_from_grid(
+        #     x=x, instance=masked_dataset.instance,
+        # )
+
         return self.profile_cube_from_grid(
-            x=x, instance=masked_dataset.instance,
+            grid_3d=masked_dataset.grid_3d,
+            z_step_kms=masked_dataset.z_step_kms,
+            instance=masked_dataset.instance,
         )
-"""
+
 # ============================================================================ #
 # ============================================================================ #

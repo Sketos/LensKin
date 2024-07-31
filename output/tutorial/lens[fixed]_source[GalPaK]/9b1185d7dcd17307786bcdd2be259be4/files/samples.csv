@@ -1,2 +1,2 @@
-galaxies.source.centre.centre_0,galaxies.source.centre.centre_1,   log_likelihood,          log_prior,    log_posterior,weight
-           0.020800081689875714,            0.20215327371444855,-756704.466986317,0.08259717894354851,-756704.384389138,   1.0
+galaxies.source.centre.centre_0,galaxies.source.centre.centre_1,   log_likelihood,          log_prior,     log_posterior,weight
+           0.016325052843063906,            0.19764427591116301,-757152.191799409,0.07865953430155352,-757152.1131398747,   1.0

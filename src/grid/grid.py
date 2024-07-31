@@ -7,24 +7,17 @@ try:
 except:
     print("\'autolens\' could not be imported")
 
-# ---------------------------------------------------------------------------- #
-# path = os.environ["GitHub"] + "{}/tutorials/autofit/tutorial_13"
-# sys.path.append(path)
-
+# NOTE:
 from src.mask.mask import (
     Mask3D,
 )
-# ---------------------------------------------------------------------------- #
+from src.utils import (
+    autoarray_utils as autoarray_utils,
+)
 
 
 def func(grid_2d):
-
     return grid_2d
-
-
-class AutoArrayObj:
-    def __init__(self):
-        pass
 
 
 class AbstractGrid3D:
@@ -35,7 +28,7 @@ class AbstractGrid3D:
 class Grid3D(AbstractGrid3D):
     def __init__(
         self,
-        grid_2d: AutoArrayObj,
+        grid_2d: autoarray_utils.AutoArrayObj,
         n_channels: int
     ):
 
