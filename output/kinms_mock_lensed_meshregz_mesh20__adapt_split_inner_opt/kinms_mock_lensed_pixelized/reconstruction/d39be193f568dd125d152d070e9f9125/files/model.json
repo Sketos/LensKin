@@ -1,0 +1,180 @@
+{
+    "type": "collection",
+    "arguments": {
+        "galaxies": {
+            "type": "collection",
+            "arguments": {
+                "lens": {
+                    "class_path": "autogalaxy.galaxy.galaxy.Galaxy",
+                    "type": "instance",
+                    "arguments": {
+                        "redshift": {
+                            "type": "Constant",
+                            "value": 0.404
+                        },
+                        "mass": {
+                            "class_path": "autogalaxy.profiles.mass.total.power_law.PowerLaw",
+                            "type": "instance",
+                            "arguments": {
+                                "centre": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.21,
+                                        0.052
+                                    ]
+                                },
+                                "ell_comps": {
+                                    "type": "tuple",
+                                    "values": [
+                                        -0.056,
+                                        -0.047
+                                    ]
+                                },
+                                "einstein_radius": {
+                                    "type": "Constant",
+                                    "value": 1.731
+                                },
+                                "slope": {
+                                    "type": "Constant",
+                                    "value": 2.0
+                                }
+                            }
+                        },
+                        "shear": {
+                            "class_path": "autogalaxy.profiles.mass.sheets.external_shear.ExternalShear",
+                            "type": "instance",
+                            "arguments": {
+                                "gamma_1": {
+                                    "type": "Constant",
+                                    "value": -0.007
+                                },
+                                "gamma_2": {
+                                    "type": "Constant",
+                                    "value": -0.01
+                                }
+                            }
+                        },
+                        "multipole_m3": {
+                            "class_path": "autogalaxy.profiles.mass.total.power_law_multipole.PowerLawMultipole",
+                            "type": "instance",
+                            "arguments": {
+                                "m": {
+                                    "type": "Constant",
+                                    "value": 3.0
+                                },
+                                "centre": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.21,
+                                        0.052
+                                    ]
+                                },
+                                "einstein_radius": {
+                                    "type": "Constant",
+                                    "value": 1.731
+                                },
+                                "slope": {
+                                    "type": "Constant",
+                                    "value": 2.0
+                                },
+                                "multipole_comps": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.0,
+                                        0.0
+                                    ]
+                                }
+                            }
+                        },
+                        "multipole_m4": {
+                            "class_path": "autogalaxy.profiles.mass.total.power_law_multipole.PowerLawMultipole",
+                            "type": "instance",
+                            "arguments": {
+                                "m": {
+                                    "type": "Constant",
+                                    "value": 4.0
+                                },
+                                "centre": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.21,
+                                        0.052
+                                    ]
+                                },
+                                "einstein_radius": {
+                                    "type": "Constant",
+                                    "value": 1.731
+                                },
+                                "slope": {
+                                    "type": "Constant",
+                                    "value": 2.0
+                                },
+                                "multipole_comps": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.0,
+                                        0.0
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                "source": {
+                    "class_path": "autogalaxy.galaxy.galaxy.Galaxy",
+                    "type": "model",
+                    "arguments": {
+                        "redshift": {
+                            "type": "Constant",
+                            "value": 2.7855
+                        },
+                        "pixelization": {
+                            "class_path": "autoarray.inversion.pixelization.Pixelization",
+                            "type": "model",
+                            "arguments": {
+                                "mesh": {
+                                    "class_path": "autoarray.inversion.mesh.mesh.delaunay.Delaunay",
+                                    "type": "instance",
+                                    "arguments": {
+                                        "pixels": {
+                                            "type": "Constant",
+                                            "value": 352.0
+                                        },
+                                        "zeroed_pixels": {
+                                            "type": "Constant",
+                                            "value": 20.0
+                                        },
+                                        "areas_factor": {
+                                            "type": "Constant",
+                                            "value": 0.5
+                                        }
+                                    }
+                                },
+                                "regularization": {
+                                    "class_path": "autoarray.inversion.regularization.adapt_split.AdaptSplit",
+                                    "type": "model",
+                                    "arguments": {
+                                        "inner_coefficient": {
+                                            "type": "LogUniform",
+                                            "id": 26,
+                                            "lower_limit": 0.01,
+                                            "upper_limit": 100.0
+                                        },
+                                        "outer_coefficient": {
+                                            "type": "Constant",
+                                            "value": 30.0
+                                        },
+                                        "signal_scale": {
+                                            "type": "Constant",
+                                            "value": 3.0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

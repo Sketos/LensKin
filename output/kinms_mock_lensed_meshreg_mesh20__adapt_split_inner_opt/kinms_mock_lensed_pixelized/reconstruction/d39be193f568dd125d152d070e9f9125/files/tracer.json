@@ -1,0 +1,157 @@
+{
+    "type": "instance",
+    "class_path": "autolens.lens.tracer.Tracer",
+    "arguments": {
+        "galaxies": {
+            "type": "list",
+            "values": [
+                {
+                    "type": "instance",
+                    "class_path": "autogalaxy.galaxy.galaxy.Galaxy",
+                    "arguments": {
+                        "redshift": 0.404,
+                        "label": "cls35",
+                        "mass": {
+                            "type": "instance",
+                            "class_path": "autogalaxy.profiles.mass.total.power_law.PowerLaw",
+                            "arguments": {
+                                "slope": 2.0,
+                                "centre": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.21,
+                                        0.052
+                                    ]
+                                },
+                                "ell_comps": {
+                                    "type": "tuple",
+                                    "values": [
+                                        -0.056,
+                                        -0.047
+                                    ]
+                                },
+                                "einstein_radius": 1.731
+                            }
+                        },
+                        "shear": {
+                            "type": "instance",
+                            "class_path": "autogalaxy.profiles.mass.sheets.external_shear.ExternalShear",
+                            "arguments": {
+                                "gamma_1": -0.007,
+                                "gamma_2": -0.01
+                            }
+                        },
+                        "multipole_m3": {
+                            "type": "instance",
+                            "class_path": "autogalaxy.profiles.mass.total.power_law_multipole.PowerLawMultipole",
+                            "arguments": {
+                                "m": 3,
+                                "slope": 2.0,
+                                "centre": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.21,
+                                        0.052
+                                    ]
+                                },
+                                "einstein_radius": 1.731,
+                                "multipole_comps": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.0,
+                                        0.0
+                                    ]
+                                }
+                            }
+                        },
+                        "multipole_m4": {
+                            "type": "instance",
+                            "class_path": "autogalaxy.profiles.mass.total.power_law_multipole.PowerLawMultipole",
+                            "arguments": {
+                                "m": 4,
+                                "slope": 2.0,
+                                "centre": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.21,
+                                        0.052
+                                    ]
+                                },
+                                "einstein_radius": 1.731,
+                                "multipole_comps": {
+                                    "type": "tuple",
+                                    "values": [
+                                        0.0,
+                                        0.0
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "instance",
+                    "class_path": "autogalaxy.galaxy.galaxy.Galaxy",
+                    "arguments": {
+                        "redshift": 2.7855,
+                        "label": "cls35",
+                        "pixelization": {
+                            "type": "instance",
+                            "class_path": "autoarray.inversion.pixelization.Pixelization",
+                            "arguments": {
+                                "mesh": {
+                                    "type": "instance",
+                                    "class_path": "autoarray.inversion.mesh.mesh.delaunay.Delaunay",
+                                    "arguments": {
+                                        "areas_factor": 0.5,
+                                        "pixels": 372.0,
+                                        "zeroed_pixels": {
+                                            "type": "ndarray",
+                                            "array": [
+                                                352,
+                                                353,
+                                                354,
+                                                355,
+                                                356,
+                                                357,
+                                                358,
+                                                359,
+                                                360,
+                                                361,
+                                                362,
+                                                363,
+                                                364,
+                                                365,
+                                                366,
+                                                367,
+                                                368,
+                                                369,
+                                                370,
+                                                371
+                                            ],
+                                            "dtype": "int64"
+                                        }
+                                    }
+                                },
+                                "regularization": {
+                                    "type": "instance",
+                                    "class_path": "autoarray.inversion.regularization.adapt_split.AdaptSplit",
+                                    "arguments": {
+                                        "signal_scale": 3.0,
+                                        "inner_coefficient": 0.02200870159567247,
+                                        "outer_coefficient": 30.0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "cosmology": {
+            "type": "instance",
+            "class_path": "autogalaxy.cosmology.model.Planck15",
+            "arguments": {}
+        }
+    }
+}

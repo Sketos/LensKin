@@ -1,0 +1,48 @@
+[
+  {
+    "label": "constant_split_1e5",
+    "reg": {
+      "type": "constant_split",
+      "prior_type": "fixed",
+      "value": 100000.0
+    },
+    "sb_sum": 2.9214223730280615,
+    "sb_max": 0.00021997750174465114,
+    "sb_min": 0.0,
+    "frac_negative": 0.0,
+    "chi_squared": 147139.926020681,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt/constant_split_1e5"
+  },
+  {
+    "label": "adapt_split_i1_o80",
+    "reg": {
+      "type": "adapt_split",
+      "prior_type": "fixed",
+      "inner_coefficient": 1.0,
+      "outer_coefficient": 80.0,
+      "signal_scale": 3.0
+    },
+    "sb_sum": 3.0983883751550194,
+    "sb_max": 0.0005063709760211221,
+    "sb_min": 0.0,
+    "frac_negative": 0.0,
+    "chi_squared": 146625.15608075119,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt/adapt_split_i1_o80"
+  },
+  {
+    "label": "adapt_split_i1_o50",
+    "reg": {
+      "type": "adapt_split",
+      "prior_type": "fixed",
+      "inner_coefficient": 1.0,
+      "outer_coefficient": 50.0,
+      "signal_scale": 3.0
+    },
+    "sb_sum": 3.169337750490361,
+    "sb_max": 0.0005911196008109246,
+    "sb_min": 0.0,
+    "frac_negative": 0.0,
+    "chi_squared": 146573.14158261594,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt/adapt_split_i1_o50"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "inner": 10.0,
+  "outer": 200.0,
+  "sb_sum": 2.9806813967216956,
+  "sb_max": 0.0003202249905834938,
+  "sb_min": 0.0,
+  "frac_negative": 0.0,
+  "chi_squared": 146813.61106079788,
+  "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/phase1_inner10_outer200"
+}

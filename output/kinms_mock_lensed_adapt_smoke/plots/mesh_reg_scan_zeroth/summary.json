@@ -1,0 +1,164 @@
+[
+  {
+    "label": "mesh15__adapt_split_inner_opt",
+    "mesh_label": "mesh15",
+    "image_mesh_shape": [
+      15,
+      15
+    ],
+    "delaunay_edge_pixels": 15,
+    "n_source_pixels": 196,
+    "reg_label": "adapt_split_inner_opt",
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.07747400061632864,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "chi_squared": 146687.91157943412,
+    "log_likelihood": 222514.66811245293,
+    "resid_sigma_med": 0.9949079625049235,
+    "resid_sigma_p95": 3.6339151337745124,
+    "resid_sigma_max": 36.26239442610271,
+    "elapsed_s": 164.19493126869202,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh15__adapt_split_inner_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh15__adapt_split_inner_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh15__adapt_split_inner_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh15__adapt_split_zeroth_opt",
+    "mesh_label": "mesh15",
+    "image_mesh_shape": [
+      15,
+      15
+    ],
+    "delaunay_edge_pixels": 15,
+    "n_source_pixels": 196,
+    "reg_label": "adapt_split_zeroth_opt",
+    "regularization": {
+      "cls": "AdaptSplitZeroth",
+      "inner_coefficient": 0.29455831029480495,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0,
+      "zeroth_coefficient": 0.3102779816640732,
+      "zeroth_signal_scale": 1.0
+    },
+    "chi_squared": 146687.91203309654,
+    "log_likelihood": 222514.66788562172,
+    "resid_sigma_med": 0.9948820866794549,
+    "resid_sigma_p95": 3.6340985882009607,
+    "resid_sigma_max": 36.26256809425802,
+    "elapsed_s": 218.2733190059662,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh15__adapt_split_zeroth_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh15__adapt_split_zeroth_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh15__adapt_split_zeroth_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh20__adapt_split_inner_opt",
+    "mesh_label": "mesh20",
+    "image_mesh_shape": [
+      20,
+      20
+    ],
+    "delaunay_edge_pixels": 20,
+    "n_source_pixels": 352,
+    "reg_label": "adapt_split_inner_opt",
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.9824002152208198,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "chi_squared": 146520.08888535897,
+    "log_likelihood": 222598.5794594905,
+    "resid_sigma_med": 0.7117574045315825,
+    "resid_sigma_p95": 2.896498152527195,
+    "resid_sigma_max": 27.273962644164232,
+    "elapsed_s": 105.32298398017883,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh20__adapt_split_inner_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh20__adapt_split_inner_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh20__adapt_split_inner_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh20__adapt_split_zeroth_opt",
+    "mesh_label": "mesh20",
+    "image_mesh_shape": [
+      20,
+      20
+    ],
+    "delaunay_edge_pixels": 20,
+    "n_source_pixels": 352,
+    "reg_label": "adapt_split_zeroth_opt",
+    "regularization": {
+      "cls": "AdaptSplitZeroth",
+      "inner_coefficient": 0.3403445322315749,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0,
+      "zeroth_coefficient": 0.353908811904079,
+      "zeroth_signal_scale": 1.0
+    },
+    "chi_squared": 146520.05835674555,
+    "log_likelihood": 222598.59472379723,
+    "resid_sigma_med": 0.7116561594302129,
+    "resid_sigma_p95": 2.8953744010162503,
+    "resid_sigma_max": 27.26987359763539,
+    "elapsed_s": 227.8359489440918,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh20__adapt_split_zeroth_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh20__adapt_split_zeroth_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh20__adapt_split_zeroth_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh30__adapt_split_inner_opt",
+    "mesh_label": "mesh30",
+    "image_mesh_shape": [
+      30,
+      30
+    ],
+    "delaunay_edge_pixels": 30,
+    "n_source_pixels": 754,
+    "reg_label": "adapt_split_inner_opt",
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.0519093855046544,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "chi_squared": 146317.54983010658,
+    "log_likelihood": 222699.8489871167,
+    "resid_sigma_med": 0.38723954565256474,
+    "resid_sigma_p95": 1.7539581032865272,
+    "resid_sigma_max": 10.812288938238868,
+    "elapsed_s": 260.5413200855255,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh30__adapt_split_inner_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh30__adapt_split_inner_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh30__adapt_split_inner_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh30__adapt_split_zeroth_opt",
+    "mesh_label": "mesh30",
+    "image_mesh_shape": [
+      30,
+      30
+    ],
+    "delaunay_edge_pixels": 30,
+    "n_source_pixels": 754,
+    "reg_label": "adapt_split_zeroth_opt",
+    "regularization": {
+      "cls": "AdaptSplitZeroth",
+      "inner_coefficient": 0.16968362242495144,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0,
+      "zeroth_coefficient": 0.42110096462549085,
+      "zeroth_signal_scale": 1.0
+    },
+    "chi_squared": 146317.5764554734,
+    "log_likelihood": 222699.83567443327,
+    "resid_sigma_med": 0.38726030621066415,
+    "resid_sigma_p95": 1.753921460070774,
+    "resid_sigma_max": 10.815468050990557,
+    "elapsed_s": 374.3960130214691,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh30__adapt_split_zeroth_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh30__adapt_split_zeroth_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan_zeroth/mesh30__adapt_split_zeroth_opt/sb_map_panels.png"
+  }
+]

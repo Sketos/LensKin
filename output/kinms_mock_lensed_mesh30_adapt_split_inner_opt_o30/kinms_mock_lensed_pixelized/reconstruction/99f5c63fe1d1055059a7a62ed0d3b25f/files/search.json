@@ -1,0 +1,56 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.mle.bfgs.search.LBFGS",
+    "arguments": {
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "is_identifier_in_paths": true,
+                "image_path_suffix": "",
+                "name": "reconstruction",
+                "identifier": "99f5c63fe1d1055059a7a62ed0d3b25f",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "kinms_mock_lensed_pixelized"
+                },
+                "unique_tag": null,
+                "parent": null
+            }
+        },
+        "name": "reconstruction",
+        "inplace": false,
+        "silence": false,
+        "maxls": 20,
+        "disp": false,
+        "tol": null,
+        "iterations_per_quick_update": 1e+99,
+        "path_prefix": {
+            "type": "path",
+            "path": "kinms_mock_lensed_pixelized"
+        },
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "maxfun": 15000,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerBall",
+            "arguments": {
+                "lower_limit": 0.49,
+                "upper_limit": 0.51
+            }
+        },
+        "number_of_cores": 1,
+        "iprint": -1.0,
+        "maxiter": 200,
+        "live_visual_update": false,
+        "unique_tag": null,
+        "gtol": 1e-05,
+        "maxcor": 10,
+        "iterations_per_full_update": 1e+99,
+        "ftol": 2.220446049250313e-09,
+        "eps": 1e-08
+    }
+}

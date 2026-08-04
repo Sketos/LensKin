@@ -1,0 +1,50 @@
+Total Free Parameters = 2
+
+model                                                                           Collection (N=2)
+    galaxies                                                                    Collection (N=2)
+        lens                                                                    Galaxy (N=2)
+            mass                                                                PowerLaw (N=2)
+            shear                                                               ExternalShear (N=0)
+            multipole_m3 - multipole_m4                                         PowerLawMultipole (N=2)
+        source                                                                  Galaxy (N=0)
+            pixelization                                                        Pixelization (N=0)
+                mesh                                                            Delaunay (N=0)
+                regularization                                                  AdaptSplit (N=0)
+
+galaxies
+    lens
+        redshift                                                                0.404
+        mass
+            ell_comps                                                           (-0.056, -0.047)
+            einstein_radius                                                     1.731
+            slope                                                               2.0
+        shear
+            gamma_1                                                             -0.007
+            gamma_2                                                             -0.01
+        multipole_m3
+            m                                                                   3.0
+            einstein_radius                                                     1.731
+            slope                                                               2.0
+        multipole_m3 - multipole_m4
+            multipole_comps                                                     (0.0, 0.0)
+        multipole_m4
+            m                                                                   4.0
+            einstein_radius                                                     1.731
+            slope                                                               2.0
+        mass - multipole_m4
+            centre
+                centre_0                                                        UniformPrior [0], lower_limit = 0.15999999999999998, upper_limit = 0.26
+                centre_1                                                        UniformPrior [1], lower_limit = 0.001999999999999995, upper_limit = 0.10200000000000001
+    source
+        redshift                                                                2.7855
+        pixelization
+            mesh
+                pixels                                                          890.0
+                zeroed_pixels                                                   30.0
+                areas_factor                                                    0.5
+            regularization
+                cls
+                    is_split_regularization                                     True
+                inner_coefficient                                               1.0
+                outer_coefficient                                               50.0
+                signal_scale                                                    3.0

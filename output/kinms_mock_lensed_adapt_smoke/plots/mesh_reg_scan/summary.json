@@ -1,0 +1,152 @@
+[
+  {
+    "label": "mesh15__constant_split_opt",
+    "mesh_label": "mesh15",
+    "image_mesh_shape": [
+      15,
+      15
+    ],
+    "delaunay_edge_pixels": 15,
+    "n_source_pixels": 196,
+    "reg_label": "constant_split_opt",
+    "regularization": {
+      "cls": "ConstantSplit",
+      "coefficient": 510.7135680865477
+    },
+    "chi_squared": 146687.84956916858,
+    "log_likelihood": 222514.6991175857,
+    "resid_sigma_med": 0.9951499564829586,
+    "resid_sigma_p95": 3.6092019365346446,
+    "resid_sigma_max": 36.161704062808475,
+    "elapsed_s": 227.7345368862152,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh15__constant_split_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh15__constant_split_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh15__constant_split_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh15__adapt_split_inner_opt",
+    "mesh_label": "mesh15",
+    "image_mesh_shape": [
+      15,
+      15
+    ],
+    "delaunay_edge_pixels": 15,
+    "n_source_pixels": 196,
+    "reg_label": "adapt_split_inner_opt",
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.03568543374129262,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "chi_squared": 146687.9114925784,
+    "log_likelihood": 222514.6681558808,
+    "resid_sigma_med": 0.9949129210543753,
+    "resid_sigma_p95": 3.6338799287270818,
+    "resid_sigma_max": 36.26236088439362,
+    "elapsed_s": 164.74982500076294,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh15__adapt_split_inner_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh15__adapt_split_inner_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh15__adapt_split_inner_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh20__constant_split_opt",
+    "mesh_label": "mesh20",
+    "image_mesh_shape": [
+      20,
+      20
+    ],
+    "delaunay_edge_pixels": 20,
+    "n_source_pixels": 352,
+    "reg_label": "constant_split_opt",
+    "regularization": {
+      "cls": "ConstantSplit",
+      "coefficient": 330.2282828586932
+    },
+    "chi_squared": 146515.69182441916,
+    "log_likelihood": 222600.7779899604,
+    "resid_sigma_med": 0.679546682873207,
+    "resid_sigma_p95": 2.764215133798731,
+    "resid_sigma_max": 26.62353437855769,
+    "elapsed_s": 214.96084785461426,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh20__constant_split_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh20__constant_split_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh20__constant_split_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh20__adapt_split_inner_opt",
+    "mesh_label": "mesh20",
+    "image_mesh_shape": [
+      20,
+      20
+    ],
+    "delaunay_edge_pixels": 20,
+    "n_source_pixels": 352,
+    "reg_label": "adapt_split_inner_opt",
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.02200870159567247,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "chi_squared": 146520.0433755641,
+    "log_likelihood": 222598.60221438794,
+    "resid_sigma_med": 0.7116062551082977,
+    "resid_sigma_p95": 2.8948215913817292,
+    "resid_sigma_max": 27.267850405817093,
+    "elapsed_s": 171.25205492973328,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh20__adapt_split_inner_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh20__adapt_split_inner_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh20__adapt_split_inner_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh30__constant_split_opt",
+    "mesh_label": "mesh30",
+    "image_mesh_shape": [
+      30,
+      30
+    ],
+    "delaunay_edge_pixels": 30,
+    "n_source_pixels": 754,
+    "reg_label": "constant_split_opt",
+    "regularization": {
+      "cls": "ConstantSplit",
+      "coefficient": 179.27405759360227
+    },
+    "chi_squared": 146290.60698456998,
+    "log_likelihood": 222713.320409885,
+    "resid_sigma_med": 0.347522112164617,
+    "resid_sigma_p95": 1.5096284995592624,
+    "resid_sigma_max": 6.40400030239144,
+    "elapsed_s": 733.1697280406952,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh30__constant_split_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh30__constant_split_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh30__constant_split_opt/sb_map_panels.png"
+  },
+  {
+    "label": "mesh30__adapt_split_inner_opt",
+    "mesh_label": "mesh30",
+    "image_mesh_shape": [
+      30,
+      30
+    ],
+    "delaunay_edge_pixels": 30,
+    "n_source_pixels": 754,
+    "reg_label": "adapt_split_inner_opt",
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.9944085870280436,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "chi_squared": 146317.7637788015,
+    "log_likelihood": 222699.74201276922,
+    "resid_sigma_med": 0.3880382833395588,
+    "resid_sigma_p95": 1.7536505091775993,
+    "resid_sigma_max": 10.8378638953517,
+    "elapsed_s": 172.85060214996338,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh30__adapt_split_inner_opt",
+    "sb_map_30x30": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh30__adapt_split_inner_opt/sb_map_30x30.png",
+    "sb_map_panels": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/mesh_reg_scan/mesh30__adapt_split_inner_opt/sb_map_panels.png"
+  }
+]

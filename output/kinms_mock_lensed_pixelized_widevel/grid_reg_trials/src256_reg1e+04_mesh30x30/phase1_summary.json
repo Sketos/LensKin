@@ -1,0 +1,11 @@
+{
+  "chi_squared": 16.82398296108996,
+  "noise_normalization": -693609.8833466519,
+  "log_likelihood_data": 346796.5296818454,
+  "regularization_term": 4.838800948586002,
+  "log_likelihood_with_regularization": 346794.1102813711,
+  "log_det_curvature_reg": 16390.7189297864,
+  "log_det_regularization": 15273.466551810161,
+  "figure_of_merit_log_evidence": 346235.4675068152,
+  "figure_of_merit_note": null
+}

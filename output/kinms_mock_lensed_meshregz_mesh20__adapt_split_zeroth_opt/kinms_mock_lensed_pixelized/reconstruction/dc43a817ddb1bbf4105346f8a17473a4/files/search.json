@@ -1,0 +1,56 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.mle.bfgs.search.LBFGS",
+    "arguments": {
+        "unique_tag": null,
+        "inplace": false,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerBall",
+            "arguments": {
+                "upper_limit": 0.51,
+                "lower_limit": 0.49
+            }
+        },
+        "maxls": 20,
+        "maxiter": 250,
+        "ftol": 2.220446049250313e-09,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "tol": null,
+        "iterations_per_full_update": 1e+99,
+        "maxcor": 10,
+        "maxfun": 15000,
+        "gtol": 1e-05,
+        "number_of_cores": 1,
+        "iprint": -1.0,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "unique_tag": null,
+                "identifier": "dc43a817ddb1bbf4105346f8a17473a4",
+                "is_identifier_in_paths": true,
+                "name": "reconstruction",
+                "parent": null,
+                "image_path_suffix": "",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "kinms_mock_lensed_pixelized"
+                }
+            }
+        },
+        "path_prefix": {
+            "type": "path",
+            "path": "kinms_mock_lensed_pixelized"
+        },
+        "live_visual_update": false,
+        "eps": 1e-08,
+        "disp": false,
+        "name": "reconstruction",
+        "iterations_per_quick_update": 1e+99,
+        "silence": false
+    }
+}

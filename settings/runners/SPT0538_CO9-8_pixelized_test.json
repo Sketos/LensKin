@@ -1,0 +1,128 @@
+{
+  "config_path": "./config",
+  "output_path": "/opsw/work/hstacey/LensKin/output/SPT0538_CO9-8_pixelized_test/",
+  "data_directory": "/opsw/work/hstacey/SPT0538_CO9-8/binned_x5/",
+  "uids": [
+    "SPT0538_CO9-8"
+  ],
+  "width": "30kms",
+  "data_patterns": {
+    "frequencies": "frequencies_{uid}_width_{width}_contsub_binned.fits",
+    "uv_wavelengths": "uv_wavelengths_{uid}_width_{width}_contsub_binned.fits",
+    "visibilities": "visibilities_{uid}_width_{width}_contsub_binned.fits",
+    "sigma": "sigma_statwt_{uid}_width_{width}_contsub_binned.fits"
+  },
+  "redshift_lens": 0.404,
+  "redshift_source": 2.7855,
+  "n_pixels": 40,
+  "real_space_width": 5.0,
+  "rest_line_frequency_ghz": 1036.912393,
+  "model_name": "KinMSPixelized",
+  "normalization_mode": "pixelized",
+  "lens_mass_model": {
+    "centre_0": 0.21,
+    "centre_1": 0.052,
+    "einstein_radius": 1.731,
+    "elliptical_comps_0": -0.056,
+    "elliptical_comps_1": -0.047,
+    "slope": 2.0,
+    "shear_elliptical_comps_0": -0.01,
+    "shear_elliptical_comps_1": -0.007,
+    "multipole_m3_elliptical_comps_0": 0.0,
+    "multipole_m3_elliptical_comps_1": 0.0,
+    "multipole_m4_elliptical_comps_0": 0.0,
+    "multipole_m4_elliptical_comps_1": 0.0
+  },
+  "plot": true,
+  "write_dirty_data_cube": false,
+  "write_dirty_model_cube": false,
+  "reconstruction": {
+    "fix_lens": true,
+    "mesh_type": "rectangular_adapt_density",
+    "use_jax": true,
+    "transformer": "auto",
+    "mask_n_pixels": 128,
+    "mask_radius": 3.0,
+    "mesh_shape": [
+      28,
+      28
+    ],
+    "flux_threshold": 0.0,
+    "max_radius": 1.0,
+    "sb_input_units": "jy_per_pixel_per_channel",
+    "centre_prior": {
+      "lower_limit": -0.5,
+      "upper_limit": 0.5
+    },
+    "regularization": {
+      "prior_type": "log_uniform",
+      "lower_limit": 100000.0,
+      "upper_limit": 10000000.0
+    },
+    "search": {
+      "path_prefix": "SPT0538_CO9-8_pixelized_test",
+      "name": "reconstruction",
+      "optimizer": "LBFGS",
+      "number_of_cores": 1,
+      "maxiter": 200,
+      "eps": 1000.0
+    },
+    "clouds_per_pixel": 64,
+    "disk_scale_height_kpc": 0.1
+  },
+  "priors": {
+    "centre_0": {
+      "type": "UniformPrior",
+      "lower_limit": -0.5,
+      "upper_limit": 0.5
+    },
+    "centre_1": {
+      "type": "UniformPrior",
+      "lower_limit": -0.5,
+      "upper_limit": 0.5
+    },
+    "z_centre": {
+      "type": "UniformPrior",
+      "lower_limit": 0.0,
+      "upper_limit": 30.0
+    },
+    "phi": {
+      "type": "UniformPrior",
+      "lower_limit": -180.0,
+      "upper_limit": 180.0
+    },
+    "inclination": {
+      "type": "UniformPrior",
+      "lower_limit": 10.0,
+      "upper_limit": 89.0
+    },
+    "maximum_velocity": {
+      "type": "UniformPrior",
+      "lower_limit": 200.0,
+      "upper_limit": 400.0
+    },
+    "velocity_dispersion": {
+      "type": "UniformPrior",
+      "lower_limit": 10.0,
+      "upper_limit": 60.0
+    },
+    "turnover_radius": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.004,
+      "upper_limit": 0.4
+    },
+    "vmax_black_hole": {
+      "type": "LogUniformPrior",
+      "lower_limit": 1.0,
+      "upper_limit": 10000.0
+    }
+  },
+  "search": {
+    "path_prefix": "SPT0538_CO9-8_pixelized_test",
+    "name": "phase_mass[1]_m3_m4_with_KinMSPixelized",
+    "n_live": 50,
+    "number_of_cores": 1
+  },
+  "disk_scale_height_kpc": 0.1,
+  "flip_kinms_y_before_lensing": false
+}

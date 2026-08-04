@@ -1,0 +1,61 @@
+{
+  "config_path": "./config",
+  "output_path": "./output",
+  "data_directory": "/Volumes/MyPassport_red/2023.1.01354.S_HERMES_J021830.5-053124",
+  "uids": [
+    "A002_X118bf6a_Xf99f"
+  ],
+  "width": 30,
+  "pattern_context": {
+    "target": "HERMES_J021830.5-053124",
+    "spw": 31,
+    "n_scan_combined": 5
+  },
+  "data_patterns": {
+    "frequencies": "frequencies_{uid}_{target}_spw_{spw}_width_{width}_contsub.fits",
+    "uv_wavelengths": "uv_wavelengths_{uid}_{target}_spw_{spw}_width_{width}_contsub.fits",
+    "visibilities": "visibilities_{uid}_{target}_spw_{spw}_width_{width}_contsub.fits",
+    "sigma": "sigma_from_visibilities_{uid}_{target}_spw_{spw}_width_{width}_with_scans_x{n_scan_combined}_contsub.fits"
+  },
+  "redshift_lens": 0.5,
+  "redshift_source": 2.0,
+  "line_redshift": 3.39,
+  "n_pixels": 128,
+  "pixel_scale": 0.0390625,
+  "rest_line_frequency_ghz": 1900.5369,
+  "model_name": "GalPak",
+  "swap_shear_components": false,
+  "lens_mass_model": {
+    "centre_0": 0.099,
+    "centre_1": -0.067,
+    "einstein_radius": 0.514,
+    "elliptical_comps_0": -0.184,
+    "elliptical_comps_1": -0.052,
+    "slope": 2.0,
+    "shear_elliptical_comps_0": -0.001,
+    "shear_elliptical_comps_1": 0.067
+  },
+  "write_dirty_data_cube": false,
+  "write_dirty_model_cube": false,
+  "debug_instance_vector": [
+    -0.07,
+    0.1,
+    15.0,
+    0.045,
+    0.1,
+    65.0,
+    12.0,
+    0.1,
+    320.0,
+    40.0
+  ],
+  "priors": {},
+  "search": {
+    "path_prefix": "HERMES_J021830.5-053124",
+    "name": "phase_inversion[0]",
+    "n_live": 200,
+    "number_of_cores": "auto"
+  },
+  "disk_scale_height_kpc": 0.1,
+  "flip_kinms_y_before_lensing": false
+}

@@ -1,0 +1,51 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.nest.dynesty.search.static.DynestyStatic",
+    "arguments": {
+        "sample": "rwalk",
+        "bound": "multi",
+        "inplace": false,
+        "nlive": 20,
+        "iterations_per_update": 500,
+        "slices": 5,
+        "max_move": 100,
+        "name": "lens[fixed]_source[GalPaK]",
+        "path_prefix": {
+            "type": "path",
+            "path": "tutorial"
+        },
+        "walks": 5,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerPrior",
+            "arguments": {}
+        },
+        "bootstrap": null,
+        "enlarge": null,
+        "facc": 0.2,
+        "use_gradient": false,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "number_of_cores": 1,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "image_path_suffix": "",
+                "identifier": "9b1185d7dcd17307786bcdd2be259be4",
+                "is_identifier_in_paths": true,
+                "parent": null,
+                "name": "lens[fixed]_source[GalPaK]",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "tutorial"
+                },
+                "unique_tag": null
+            }
+        },
+        "fmove": 0.9,
+        "unique_tag": null
+    }
+}

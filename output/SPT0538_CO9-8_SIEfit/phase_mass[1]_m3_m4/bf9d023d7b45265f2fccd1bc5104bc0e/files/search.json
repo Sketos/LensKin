@@ -1,0 +1,50 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.nest.dynesty.search.static.DynestyStatic",
+    "arguments": {
+        "sample": "rwalk",
+        "fmove": 0.9,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerPrior",
+            "arguments": {}
+        },
+        "inplace": false,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "enlarge": null,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "path_prefix": {
+                    "type": "path",
+                    "path": "SPT0538_CO9-8_SIEfit"
+                },
+                "is_identifier_in_paths": true,
+                "parent": null,
+                "unique_tag": null,
+                "name": "phase_mass[1]_m3_m4",
+                "identifier": "bf9d023d7b45265f2fccd1bc5104bc0e"
+            }
+        },
+        "unique_tag": null,
+        "name": "phase_mass[1]_m3_m4",
+        "walks": 5,
+        "path_prefix": {
+            "type": "path",
+            "path": "SPT0538_CO9-8_SIEfit"
+        },
+        "iterations_per_update": 500,
+        "bootstrap": null,
+        "nlive": 200,
+        "facc": 0.2,
+        "number_of_cores": 1,
+        "slices": 5,
+        "bound": "multi",
+        "max_move": 100,
+        "use_gradient": false
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "mode": "parametric",
+      "ok": true,
+      "chi_squared_per_datum": 0.9993776427750727,
+      "log_likelihood": 446858.3057658784,
+      "plots": {
+        "dirty_mom0_fit": "/Users/hstacey/packages/LensKin/output/galpak_selfconsist_smoke/plots/parametric/dirty_mom0_fit.png",
+        "channel_residuals": "/Users/hstacey/packages/LensKin/output/galpak_selfconsist_smoke/plots/parametric/channel_residuals.png"
+      }
+    },
+    {
+      "mode": "parametric_flux_from_phase1",
+      "ok": true,
+      "phase1_intflux_jy_kms": 16.769239497405714,
+      "galpak_intensity": 0.5593336519303199,
+      "chi_squared_per_datum": 0.9994800249762005,
+      "log_likelihood": 446677.703563089,
+      "plots": {
+        "phase1": "/Users/hstacey/packages/LensKin/output/galpak_selfconsist_smoke/plots/parametric_flux/phase1/fit_triplet.png",
+        "phase1_sb_map": "/Users/hstacey/packages/LensKin/output/galpak_selfconsist_smoke/plots/parametric_flux/phase1/sb_map.png",
+        "phase2_dirty_mom0_fit": "/Users/hstacey/packages/LensKin/output/galpak_selfconsist_smoke/plots/parametric_flux/phase2/dirty_mom0_fit.png",
+        "phase2_channel_residuals": "/Users/hstacey/packages/LensKin/output/galpak_selfconsist_smoke/plots/parametric_flux/phase2/channel_residuals.png"
+      }
+    }
+  ],
+  "mom0_compare": "/Users/hstacey/packages/LensKin/output/galpak_selfconsist_smoke/plots/mom0_compare.png"
+}

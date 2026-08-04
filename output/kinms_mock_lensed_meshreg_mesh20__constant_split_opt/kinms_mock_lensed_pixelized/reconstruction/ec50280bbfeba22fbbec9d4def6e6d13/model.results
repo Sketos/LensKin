@@ -1,0 +1,45 @@
+Maximum Log Likelihood                                                          222598.36533129
+
+model                                                                           Collection (N=1)
+    galaxies                                                                    Collection (N=1)
+        lens                                                                    Galaxy (N=0)
+            mass                                                                PowerLaw (N=0)
+            shear                                                               ExternalShear (N=0)
+            multipole_m3 - multipole_m4                                         PowerLawMultipole (N=0)
+        source                                                                  Galaxy (N=1)
+            pixelization                                                        Pixelization (N=1)
+                mesh                                                            Delaunay (N=0)
+                regularization                                                  ConstantSplit (N=1)
+
+Maximum Log Likelihood Model:
+
+galaxies
+    source
+        pixelization
+            regularization
+                coefficient                                                     330.228
+
+galaxies
+    lens
+        redshift                                                                0.404
+        mass
+            einstein_radius                                                     1.731
+            slope                                                               2.0
+        shear
+            gamma_1                                                             -0.007
+            gamma_2                                                             -0.01
+        multipole_m3
+            m                                                                   3.0
+            einstein_radius                                                     1.731
+            slope                                                               2.0
+        multipole_m4
+            m                                                                   4.0
+            einstein_radius                                                     1.731
+            slope                                                               2.0
+    source
+        redshift                                                                2.7855
+        pixelization
+            mesh
+                pixels                                                          352.0
+                zeroed_pixels                                                   20.0
+                areas_factor                                                    0.5

@@ -103,6 +103,22 @@ class Grid3D(AbstractGrid3D):
             n_channels=n_channels
         )
 
+    @classmethod
+    def bounding_box(
+        cls,
+        bounding_box,
+        n_pixels: int,
+        n_channels: int,
+    ) -> "Grid3D":
+        grid_2d = al.Grid2D.bounding_box(
+            bounding_box=np.asarray(bounding_box, dtype=float),
+            shape_native=(n_pixels, n_pixels),
+        )
+        return Grid3D(
+            grid_2d=grid_2d,
+            n_channels=n_channels,
+        )
+
 
 def grid_from_mask(
     mask_3d: Mask3D

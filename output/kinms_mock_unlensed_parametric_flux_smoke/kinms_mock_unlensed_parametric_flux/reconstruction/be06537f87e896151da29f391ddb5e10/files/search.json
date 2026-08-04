@@ -1,0 +1,56 @@
+{
+    "type": "instance",
+    "class_path": "src.pipelines.jax_lbfgs.JAXLBFGS",
+    "arguments": {
+        "iprint": -1.0,
+        "iterations_per_quick_update": 1e+99,
+        "tol": null,
+        "unique_tag": null,
+        "name": "reconstruction",
+        "path_prefix": {
+            "type": "path",
+            "path": "kinms_mock_unlensed_parametric_flux"
+        },
+        "live_visual_update": false,
+        "disp": false,
+        "silence": false,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerBall",
+            "arguments": {
+                "lower_limit": 0.49,
+                "upper_limit": 0.51
+            }
+        },
+        "maxfun": 15000,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "path_prefix": {
+                    "type": "path",
+                    "path": "kinms_mock_unlensed_parametric_flux"
+                },
+                "is_identifier_in_paths": true,
+                "identifier": "be06537f87e896151da29f391ddb5e10",
+                "unique_tag": null,
+                "parent": null,
+                "name": "reconstruction",
+                "image_path_suffix": ""
+            }
+        },
+        "maxls": 20,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "number_of_cores": 1,
+        "inplace": false,
+        "eps": 1e-08,
+        "gtol": 1e-05,
+        "maxiter": 50,
+        "iterations_per_full_update": 1e+99,
+        "ftol": 2.220446049250313e-09,
+        "maxcor": 10
+    }
+}

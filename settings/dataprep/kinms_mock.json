@@ -1,0 +1,8 @@
+{
+    "uid": "kinms_mock",
+    "width": "30kms",
+    "outputvis": "/Users/hstacey/Work/test_3d_kin/sim3/sim3.alma_0.4arcsec.noisy.ms",
+    "data_directory": "/Users/hstacey/Work/test_3d_kin/sim3",
+    "filename_suffix": "_contsub"
+  }
+  

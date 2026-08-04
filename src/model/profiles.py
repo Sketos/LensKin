@@ -5,11 +5,15 @@ import numpy as np
 import autofit as af
 import autolens as al
 
+from src.utils.analysis_utils import resample_image_to_shape
+from src.utils import kinms_utils
+
 # NOTE:
 try:
     import galpak
-except:
-    print("\'galpak\' could not be imported")
+except ImportError:  # pragma: no cover - optional dependency
+    galpak = None
+    print("'galpak' could not be imported")
 
 
 # ============================================================================ #
@@ -34,6 +38,11 @@ class GalPaK(Abstract):
         maximum_velocity: float = 200.0,
         velocity_dispersion: float = 50.0,
     ):
+        if galpak is None:
+            raise ImportError(
+                "GalPaK requires the 'galpak' package "
+                "(pip install 'galpak==1.34.0')."
+            )
         super(GalPaK, self).__init__()
 
         self.centre = centre
@@ -167,11 +176,16 @@ class GalPaK(Abstract):
 
     # NOTE: ...
     def profile_cube_from_masked_dataset(self, masked_dataset):
-
+        grid_3d = masked_dataset.grid_3d
+        instance = masked_dataset.instance
+        # Mode-2 attaches a source-plane grid on the instance (phase-1 bbox);
+        # fall back to the image-plane mask grid for mode-1 GalPaK.
+        if instance is not None and getattr(instance, "grid_3d", None) is not None:
+            grid_3d = instance.grid_3d
         return self.profile_cube_from_grid(
-            grid_3d=masked_dataset.grid_3d,
+            grid_3d=grid_3d,
             z_step_kms=masked_dataset.z_step_kms,
-            instance=masked_dataset.instance,
+            instance=instance,
         )
 
 # ============================================================================ #
@@ -220,42 +234,51 @@ class kinMS(Abstract):
         )
 
 
-    def make_model(
-        self,
-        instance,
-        x: np.ndarray
-    ):
+    def make_model(self, instance):
+        x = instance.x
+        int_flux = instance.int_flux
+        if int_flux is None:
+            int_flux = self.__dict__["intensity"]
 
-        # NOTE:
         sbprof = np.exp(-x / self.__dict__["effective_radius"])
-
-        # NOTE:
-        #velprof = (2.0 * self.__dict__["maximum_velocity"] / np.pi) * np.arctan(x / self.__dict__["turnover_radius"]) + self.__dict__["vmax_black_hole"] / np.sqrt(x)
         velprof = np.hypot(
-            (2.0 * self.__dict__["maximum_velocity"] / np.pi) * np.arctan(x / self.__dict__["turnover_radius"]),
-            self.__dict__["vmax_black_hole"] / np.sqrt(x)
+            (2.0 * self.__dict__["maximum_velocity"] / np.pi)
+            * np.arctan(x / self.__dict__["turnover_radius"]),
+            self.__dict__["vmax_black_hole"] / np.sqrt(x),
         )
 
-        # NOTE:
-        cube = instance.model_cube(
+        cube = instance.obj.model_cube(
             inc=self.__dict__["inclination"],
             posAng=self.__dict__["phi"],
-            intFlux=self.__dict__["intensity"],
+            intFlux=int_flux,
             gasSigma=self.__dict__["velocity_dispersion"],
-            #diskThick=0.1,
+            diskThick=getattr(instance, "disk_thick", 0.0) or 0.0,
             sbProf=sbprof,
             velProf=velprof,
             sbRad=x,
             velRad=x,
+            inClouds=np.zeros((0, 3)),
+            flux_clouds=None,
             phaseCent=[
-                -self.__dict__["centre"][0],
-                self.__dict__["centre"][1]
+                self.__dict__["centre"][0],
+                self.__dict__["centre"][1],
             ],
             vOffset=self.__dict__["z_centre"],
-            #toplot=True,
         )
 
-        return cube.transpose(2, 0, 1)
+        # KinMS returns (x, y, v); autolens grids / ray-tracing expect (v, y, x).
+        cube = cube.transpose(2, 1, 0)
+        if instance.grid_3d is not None:
+            target_shape = instance.grid_3d.shape_2d
+            if cube.shape[1:] != target_shape:
+                cube = np.stack(
+                    [
+                        resample_image_to_shape(channel, target_shape)
+                        for channel in cube
+                    ],
+                    axis=0,
+                )
+        return cube
 
     # NOTE: ...
     def profile_cube_from_grid(
@@ -268,7 +291,7 @@ class kinMS(Abstract):
         if instance is None:
             raise NotImplementedError()
 
-        return self.make_model(instance=instance.obj, x=instance.x)
+        return self.make_model(instance=instance)
 
     # NOTE: ...
     def profile_cube_from_masked_dataset(
@@ -284,6 +307,113 @@ class kinMS(Abstract):
         #     x=x, instance=masked_dataset.instance,
         # )
 
+        return self.profile_cube_from_grid(
+            grid_3d=masked_dataset.grid_3d,
+            z_step_kms=masked_dataset.z_step_kms,
+            instance=masked_dataset.instance,
+        )
+
+# ============================================================================ #
+# ============================================================================ #
+
+class kinMSPixelized(Abstract):
+
+    def __init__(
+        self,
+        centre=(0.0, 0.0),
+        z_centre: float = 0.0,
+        inclination: float = 0.0,
+        phi: float = 50.0,
+        turnover_radius: float = 0.0,
+        maximum_velocity: float = 200.0,
+        velocity_dispersion: float = 50.0,
+        vmax_black_hole: float = 0.0,
+    ):
+        super(kinMSPixelized, self).__init__()
+
+        self.centre = centre
+        self.z_centre = z_centre
+        self.inclination = inclination
+        self.phi = phi
+        self.turnover_radius = turnover_radius
+        self.maximum_velocity = maximum_velocity
+        self.velocity_dispersion = velocity_dispersion
+        self.vmax_black_hole = vmax_black_hole
+
+    def make_model(self, instance):
+        velprof = np.hypot(
+            (2.0 * self.__dict__["maximum_velocity"] / np.pi)
+            * np.arctan(instance.x / self.__dict__["turnover_radius"]),
+            self.__dict__["vmax_black_hole"] / np.sqrt(instance.x),
+        )
+
+        # Phase-1 / truth SB maps are already on the sky (projected) source
+        # plane. KinMS ``inClouds`` must stay at those sky positions: applying
+        # ``inc`` again would re-project the morphology and brighten peaks by
+        # ~1/cos(i). Subtract ``centre`` so kinematics sit on the free source
+        # centre; ``phaseCent=[x, y]`` then places that centre in the cube.
+        centre_x, centre_y = self.__dict__["centre"]
+        in_clouds = np.asarray(instance.inClouds, dtype=float).copy()
+        in_clouds[:, 0] -= float(centre_x)
+        in_clouds[:, 1] -= float(centre_y)
+        flux_clouds = np.asarray(instance.flux_clouds, dtype=float).copy()
+        int_flux = instance.int_flux
+        in_clouds, flux_clouds, int_flux = kinms_utils.apply_max_radius_to_clouds(
+            in_clouds=in_clouds,
+            flux_clouds=flux_clouds,
+            int_flux=int_flux,
+            max_radius=getattr(instance, "max_radius", None),
+        )
+
+        # Inclination / PA enter only through LOS velocities (KinMS skips
+        # geometric projection when ``vLOS_clouds`` is provided).
+        v_los = kinms_utils.sky_plane_vlos_kms(
+            x_arcsec=in_clouds[:, 0],
+            y_arcsec=in_clouds[:, 1],
+            vel_rad_arcsec=instance.x,
+            vel_prof_kms=velprof,
+            inclination_deg=self.__dict__["inclination"],
+            pos_ang_deg=self.__dict__["phi"],
+            gas_sigma_kms=self.__dict__["velocity_dispersion"],
+            seed=getattr(instance, "vlos_seed", 100),
+        )
+
+        cube = instance.obj.model_cube(
+            inc=0.0,
+            posAng=0.0,
+            intFlux=int_flux,
+            gasSigma=0.0,
+            inClouds=in_clouds,
+            flux_clouds=flux_clouds,
+            vLOS_clouds=v_los,
+            phaseCent=[
+                float(centre_x),
+                float(centre_y),
+            ],
+            vOffset=self.__dict__["z_centre"],
+        )
+
+        # KinMS returns (x, y, v); autolens grids / ray-tracing expect (v, y, x).
+        cube = cube.transpose(2, 1, 0)
+        if instance.grid_3d is not None:
+            target_shape = instance.grid_3d.shape_2d
+            if cube.shape[1:] != target_shape:
+                cube = np.stack(
+                    [
+                        resample_image_to_shape(channel, target_shape)
+                        for channel in cube
+                    ],
+                    axis=0,
+                )
+        return cube
+
+    def profile_cube_from_grid(self, grid_3d, z_step_kms: float, instance=None):
+        if instance is None:
+            raise NotImplementedError()
+
+        return self.make_model(instance=instance)
+
+    def profile_cube_from_masked_dataset(self, masked_dataset):
         return self.profile_cube_from_grid(
             grid_3d=masked_dataset.grid_3d,
             z_step_kms=masked_dataset.z_step_kms,

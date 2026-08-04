@@ -1,0 +1,56 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.mle.bfgs.search.LBFGS",
+    "arguments": {
+        "name": "reconstruction",
+        "iterations_per_quick_update": 1e+99,
+        "disp": false,
+        "maxcor": 10,
+        "unique_tag": null,
+        "iprint": -1.0,
+        "iterations_per_full_update": 1e+99,
+        "inplace": false,
+        "maxls": 20,
+        "gtol": 1e-05,
+        "maxfun": 15000,
+        "maxiter": 200,
+        "tol": null,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "image_path_suffix": "",
+                "unique_tag": null,
+                "identifier": "e66afeb92406ee939d0458aec9a5a2ba",
+                "name": "reconstruction",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "kinms_mock_lensed_pixelized"
+                },
+                "is_identifier_in_paths": true,
+                "parent": null
+            }
+        },
+        "silence": false,
+        "path_prefix": {
+            "type": "path",
+            "path": "kinms_mock_lensed_pixelized"
+        },
+        "eps": 1e-08,
+        "live_visual_update": false,
+        "number_of_cores": 1,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerBall",
+            "arguments": {
+                "upper_limit": 0.51,
+                "lower_limit": 0.49
+            }
+        },
+        "ftol": 2.220446049250313e-09,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        }
+    }
+}

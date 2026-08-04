@@ -1,0 +1,50 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.nest.dynesty.search.static.DynestyStatic",
+    "arguments": {
+        "nlive": 200,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "bound": "multi",
+        "unique_tag": null,
+        "fmove": 0.9,
+        "inplace": false,
+        "sample": "rwalk",
+        "slices": 5,
+        "bootstrap": null,
+        "walks": 5,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "unique_tag": null,
+                "is_identifier_in_paths": true,
+                "parent": null,
+                "identifier": "b584a57818159bd4f442142aed9bf372",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "SPT0538_CO9-8_SIEfit"
+                },
+                "name": "phase_mass[1]_m3_m4"
+            }
+        },
+        "number_of_cores": 1,
+        "enlarge": null,
+        "facc": 0.2,
+        "use_gradient": false,
+        "path_prefix": {
+            "type": "path",
+            "path": "SPT0538_CO9-8_SIEfit"
+        },
+        "iterations_per_update": 500,
+        "max_move": 100,
+        "name": "phase_mass[1]_m3_m4",
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerPrior",
+            "arguments": {}
+        }
+    }
+}

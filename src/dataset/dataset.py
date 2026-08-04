@@ -37,6 +37,7 @@ class Dataset:
         z_step_kms: float=None,
         redshift_lens: float=0.5,
         redshift_source: float=2.0,
+        frequencies_hz: np.ndarray=None,
     ):
 
         # NOTE: shape = (n_c, n_v, 2)
@@ -57,6 +58,8 @@ class Dataset:
         # NOTE:
         self.redshift_lens = redshift_lens
         self.redshift_source = redshift_source
+
+        self.frequencies_hz = frequencies_hz
 
     @property
     def shape(self):
@@ -114,6 +117,8 @@ class MaskedDataset:
         # NOTE:
         self.redshift_lens = dataset.redshift_lens
         self.redshift_source = dataset.redshift_source
+
+        self.frequencies_hz = dataset.frequencies_hz
 
         # NOTE:
         self.instance = instance

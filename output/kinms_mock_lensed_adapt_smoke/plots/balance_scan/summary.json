@@ -1,0 +1,42 @@
+[
+  {
+    "inner": 1.0,
+    "outer": 80.0,
+    "signal_scale": 3.0,
+    "sb_sum": 3.0983883751550194,
+    "sb_max": 0.0005063709760211221,
+    "frac_negative": 0.0,
+    "chi_squared": 146625.15608075119,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/balance_scan/i1_o80_s3"
+  },
+  {
+    "inner": 2.0,
+    "outer": 100.0,
+    "signal_scale": 3.0,
+    "sb_sum": 3.0662633161017436,
+    "sb_max": 0.00045140325518020614,
+    "frac_negative": 0.0,
+    "chi_squared": 146666.13291181557,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/balance_scan/i2_o100_s3"
+  },
+  {
+    "inner": 1.0,
+    "outer": 100.0,
+    "signal_scale": 1.0,
+    "sb_sum": 3.0824334557627333,
+    "sb_max": 0.0005941223449961635,
+    "frac_negative": 0.0,
+    "chi_squared": 146605.9558499775,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/balance_scan/i1_o100_s1"
+  },
+  {
+    "inner": 0.5,
+    "outer": 80.0,
+    "signal_scale": 2.0,
+    "sb_sum": 3.1026975826828167,
+    "sb_max": 0.0005518965776248427,
+    "frac_negative": 0.0,
+    "chi_squared": 146609.31360743166,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/balance_scan/i0.5_o80_s2"
+  }
+]

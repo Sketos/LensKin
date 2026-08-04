@@ -86,3 +86,18 @@ def compute_z_step_kms(frequencies, frequency_0=None):
             frequency_0=frequency_0,
         )
     )
+
+
+def z_step_kms_from_data_frequencies(frequencies):
+    """
+    Velocity channel width (km/s) from the observed frequency grid.
+
+    Uses the mean channel frequency as the reference, matching CASA/dataprep
+    and ``generate_kinms_lensed_cube.py``. Do **not** use the rest-line
+    redshift frequency here — that mis-scales KinMS ``dv`` when the MS
+    channels are not centred on that reference (e.g. mock cubes at ~350 GHz).
+    """
+    frequencies_ghz = np.squeeze(np.asarray(frequencies, dtype=float))
+    if np.nanmax(frequencies_ghz) > 1.0e4:
+        frequencies_ghz = frequencies_ghz * au.Hz.to(au.GHz)
+    return float(compute_z_step_kms(frequencies_ghz))

@@ -1,0 +1,20 @@
+Total Free Parameters = 10
+
+model                                                                           Collection (N=10)
+    galaxies                                                                    Collection (N=10)
+        source                                                                  kinMS (N=10)
+
+galaxies
+    source
+        centre
+            centre_0                                                            UniformPrior [22], lower_limit = -0.6, upper_limit = 0.6
+            centre_1                                                            UniformPrior [23], lower_limit = -0.6, upper_limit = 0.6
+        z_centre                                                                UniformPrior [24], lower_limit = 10.0, upper_limit = 20.0
+        intensity                                                               LogUniformPrior [28], lower_limit = 0.001, upper_limit = 100.0
+        effective_radius                                                        UniformPrior [25], lower_limit = 0.01, upper_limit = 0.5
+        inclination                                                             UniformPrior [27], lower_limit = 10.0, upper_limit = 90.0
+        phi                                                                     UniformPrior [26], lower_limit = 0.0, upper_limit = 180.0
+        turnover_radius                                                         UniformPrior [18], lower_limit = 0.0, upper_limit = 1.0
+        maximum_velocity                                                        UniformPrior [29], lower_limit = 150.0, upper_limit = 400.0
+        velocity_dispersion                                                     UniformPrior [30], lower_limit = 0.0, upper_limit = 100.0
+        vmax_black_hole                                                         0.0

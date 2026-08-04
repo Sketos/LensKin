@@ -1,0 +1,3 @@
+name=reconstruction_free_lens_narrow_reg6k
+non_linear_search=lbfgs
+            

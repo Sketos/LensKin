@@ -1,0 +1,28 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.samples.summary.SamplesSummary",
+    "arguments": {
+        "errors_at_sigma_3": null,
+        "values_at_sigma_3": null,
+        "max_log_likelihood_sample": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.samples.sample.Sample",
+            "arguments": {
+                "log_likelihood": 222589.9661166186,
+                "log_prior": 3.8163173767480143,
+                "weight": 1.0,
+                "kwargs": {
+                    "type": "dict",
+                    "arguments": {
+                        "galaxies.source.pixelization.regularization.inner_coefficient": 0.02200870159567247
+                    }
+                }
+            }
+        },
+        "values_at_sigma_1": null,
+        "median_pdf_sample": null,
+        "model": null,
+        "log_evidence": null,
+        "errors_at_sigma_1": null
+    }
+}

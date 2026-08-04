@@ -1,0 +1,82 @@
+{
+    "type": "collection",
+    "arguments": {
+        "galaxies": {
+            "type": "collection",
+            "arguments": {
+                "source": {
+                    "class_path": "src.model.profiles.kinMS",
+                    "type": "model",
+                    "arguments": {
+                        "centre": {
+                            "type": "tuple_prior",
+                            "arguments": {
+                                "centre_0": {
+                                    "lower_limit": -0.6,
+                                    "upper_limit": 0.6,
+                                    "type": "Uniform",
+                                    "id": 22
+                                },
+                                "centre_1": {
+                                    "lower_limit": -0.6,
+                                    "upper_limit": 0.6,
+                                    "type": "Uniform",
+                                    "id": 23
+                                }
+                            }
+                        },
+                        "z_centre": {
+                            "lower_limit": 10.0,
+                            "upper_limit": 20.0,
+                            "type": "Uniform",
+                            "id": 24
+                        },
+                        "intensity": {
+                            "lower_limit": 0.001,
+                            "upper_limit": 100.0,
+                            "type": "LogUniform",
+                            "id": 28
+                        },
+                        "effective_radius": {
+                            "lower_limit": 0.01,
+                            "upper_limit": 0.5,
+                            "type": "Uniform",
+                            "id": 25
+                        },
+                        "inclination": {
+                            "lower_limit": 10.0,
+                            "upper_limit": 90.0,
+                            "type": "Uniform",
+                            "id": 27
+                        },
+                        "phi": {
+                            "lower_limit": 0.0,
+                            "upper_limit": 180.0,
+                            "type": "Uniform",
+                            "id": 26
+                        },
+                        "turnover_radius": {
+                            "lower_limit": 0.0,
+                            "upper_limit": 1.0,
+                            "type": "Uniform",
+                            "id": 18
+                        },
+                        "maximum_velocity": {
+                            "lower_limit": 150.0,
+                            "upper_limit": 400.0,
+                            "type": "Uniform",
+                            "id": 29
+                        },
+                        "velocity_dispersion": {
+                            "lower_limit": 0.0,
+                            "upper_limit": 100.0,
+                            "type": "Uniform",
+                            "id": 30
+                        },
+                        "vmax_black_hole": 0.0
+                    }
+                }
+            }
+        }
+    }
+}

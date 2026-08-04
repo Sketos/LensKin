@@ -1,0 +1,46 @@
+[
+  {
+    "label": "constant_split_opt",
+    "n_source_pixels": 754,
+    "chi_squared": 146359.18668710772,
+    "log_likelihood": 222679.03055861613,
+    "resid_sigma_med": 0.46588137572073,
+    "resid_sigma_p95": 2.0947713195054285,
+    "resid_sigma_max": 27.0864568847651,
+    "regularization": {
+      "cls": "ConstantSplit",
+      "coefficient": 734.4528424530586
+    },
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_mesh30/constant_split_opt"
+  },
+  {
+    "label": "constant_split_1e3",
+    "n_source_pixels": 754,
+    "chi_squared": 146367.23435965215,
+    "log_likelihood": 222675.0067223439,
+    "resid_sigma_med": 0.4759337209265302,
+    "resid_sigma_p95": 2.1491482882378055,
+    "resid_sigma_max": 28.822692296010082,
+    "regularization": {
+      "cls": "ConstantSplit",
+      "coefficient": 1000.0
+    },
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_mesh30/constant_split_1e3"
+  },
+  {
+    "label": "adapt_split_inner_opt_o30",
+    "n_source_pixels": 754,
+    "chi_squared": 146358.19272350296,
+    "log_likelihood": 222679.5275404185,
+    "resid_sigma_med": 0.4647003452663806,
+    "resid_sigma_p95": 2.115201300756883,
+    "resid_sigma_max": 26.985846787937554,
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.004563277861008972,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_mesh30/adapt_split_inner_opt_o30"
+  }
+]

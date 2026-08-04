@@ -1,0 +1,56 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.mle.bfgs.search.LBFGS",
+    "arguments": {
+        "name": "reconstruction",
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerBall",
+            "arguments": {
+                "upper_limit": 0.51,
+                "lower_limit": 0.49
+            }
+        },
+        "maxfun": 15000,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "silence": false,
+        "gtol": 1e-05,
+        "eps": 1e-08,
+        "disp": false,
+        "iterations_per_quick_update": 1e+99,
+        "unique_tag": null,
+        "maxls": 20,
+        "maxiter": 40,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "is_identifier_in_paths": true,
+                "image_path_suffix": "",
+                "name": "reconstruction",
+                "unique_tag": null,
+                "identifier": "77ad9b8a63e2b03e64036d4e9d89bf19",
+                "path_prefix": {
+                    "type": "path",
+                    "path": "galpak_mock_unlensed_parametric_flux"
+                },
+                "parent": null
+            }
+        },
+        "iterations_per_full_update": 1e+99,
+        "tol": null,
+        "path_prefix": {
+            "type": "path",
+            "path": "galpak_mock_unlensed_parametric_flux"
+        },
+        "iprint": -1.0,
+        "number_of_cores": 1,
+        "maxcor": 10,
+        "inplace": false,
+        "live_visual_update": false,
+        "ftol": 2.220446049250313e-09
+    }
+}

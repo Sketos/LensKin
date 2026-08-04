@@ -1,0 +1,8 @@
+Total Samples = 49958
+Total Accepted Samples = 9495
+Acceptance Ratio = 0.1900596501060891
+Time To Run = 23 days, 0:26:29.508815
+Time Per Sample (seconds) = 39.809229929441734
+Log Likelihood Function Evaluation Time (seconds) = 1.5215189456939697
+Expected Time To Run (seconds) = 21:06:52.043489
+Speed Up Factor (e.g. due to parallelization) = 0.03822025566410449

@@ -1,0 +1,12 @@
+Starting new Dynesty non-linear search (no previous samples found).
+Creating pool with 1 processes
+created
+Generating initial samples of model using 1 cores
+Initial samples generated, starting non-linear search
+Fit Running: Updating results after 500 iterations (see output folder).
+Fit Running: Updating results after 1000 iterations (see output folder).
+Fit Running: Updating results after 1500 iterations (see output folder).
+Fit Running: Updating results after 2000 iterations (see output folder).
+Fit Running: Updating results after 2500 iterations (see output folder).
+Fit Complete: Updating final results (see output folder).
+Samples with weight less than 1e-10 removed from samples.csv.

@@ -1,0 +1,29 @@
+[
+  {
+    "inner": 5.0,
+    "outer": 200.0,
+    "sb_sum": 2.9806664803876393,
+    "sb_max": 0.0003231000204313207,
+    "frac_negative": 0.0,
+    "chi_squared": 146812.7650675044,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/reg_scan/inner5_outer200"
+  },
+  {
+    "inner": 10.0,
+    "outer": 500.0,
+    "sb_sum": 2.63401615392023,
+    "sb_max": 0.0002289852289304205,
+    "frac_negative": 0.0,
+    "chi_squared": 147659.52879495997,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/reg_scan/inner10_outer500"
+  },
+  {
+    "inner": 20.0,
+    "outer": 1000.0,
+    "sb_sum": 1.0636142667534991,
+    "sb_max": 8.621074077961353e-05,
+    "frac_negative": 0.0,
+    "chi_squared": 157309.52612152498,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/reg_scan/inner20_outer1000"
+  }
+]

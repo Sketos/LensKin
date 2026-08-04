@@ -1,0 +1,171 @@
+{
+  "config_path": "./config",
+  "output_path": "./output/kinms_mock_parametric_truth_kinematics/",
+  "data_directory": "./data/kinms_mock_pixelized",
+  "uids": [
+    "kinms_mock"
+  ],
+  "width": "30kms",
+  "data_patterns": {
+    "frequencies": "frequencies_{uid}_width_{width}_contsub.fits",
+    "uv_wavelengths": "uv_wavelengths_{uid}_width_{width}_contsub.fits",
+    "visibilities": "visibilities_{uid}_width_{width}_contsub.fits",
+    "sigma": "sigma_statwt_{uid}_width_{width}_contsub.fits"
+  },
+  "redshift_lens": 0.404,
+  "redshift_source": 2.7855,
+  "n_pixels": 40,
+  "real_space_width": 5.0,
+  "source_grid": {
+    "n_pixels": 256
+  },
+  "rest_line_frequency_ghz": 1036.912393,
+  "model_name": "KinMS",
+  "normalization_mode": "parametric_flux_from_phase1",
+  "flip_kinms_y_before_lensing": true,
+  "flip_velocity_axis": false,
+  "truth_parameters": {
+    "z_centre": 0.0,
+    "intensity": 0.05,
+    "effective_radius": 0.05,
+    "phi": 90.0,
+    "inclination": 65.0,
+    "maximum_velocity": 320.0,
+    "velocity_dispersion": 35.0,
+    "turnover_radius": 0.05,
+    "centre_0": 0.0,
+    "centre_1": 0.0,
+    "vmax_black_hole": 0.0
+  },
+  "lens_mass_model": {
+    "centre_0": 0.21,
+    "centre_1": 0.052,
+    "einstein_radius": 1.731,
+    "elliptical_comps_0": -0.056,
+    "elliptical_comps_1": -0.047,
+    "slope": 2.0,
+    "shear_elliptical_comps_0": -0.01,
+    "shear_elliptical_comps_1": -0.007,
+    "multipole_m3_elliptical_comps_0": 0.0,
+    "multipole_m3_elliptical_comps_1": 0.0,
+    "multipole_m4_elliptical_comps_0": 0.0,
+    "multipole_m4_elliptical_comps_1": 0.0
+  },
+  "plot": true,
+  "write_dirty_data_cube": false,
+  "write_dirty_model_cube": false,
+  "reconstruction": {
+    "fix_lens": false,
+    "mesh_type": "delaunay",
+    "use_jax": true,
+    "transformer": "auto",
+    "mask_n_pixels": 128,
+    "mask_radius": 3.0,
+    "image_mesh_shape": [
+      30,
+      30
+    ],
+    "delaunay_edge_pixels": 30,
+    "flux_threshold": 0.0,
+    "max_radius": null,
+    "sb_input_units": "jy_per_pixel_per_channel",
+    "moment0": {
+      "sigma_mode": "independent_mean",
+      "sigma_scale": 1.0,
+      "uv_mode": "average"
+    },
+    "regularization": {
+      "type": "constant_split",
+      "prior_type": "fixed",
+      "value": 6000.0
+    },
+    "search": {
+      "path_prefix": "kinms_mock_parametric_truth_kinematics",
+      "name": "reconstruction_free_lens_narrow_reg6k",
+      "optimizer": "LBFGS",
+      "use_jax_gradient": false,
+      "number_of_cores": 8,
+      "maxiter": 1000
+    },
+    "clouds_per_pixel": 1024,
+    "disk_scale_height_kpc": 0.1
+  },
+  "lens_centre_half_width": 0.05,
+  "free_lens_centre": true,
+  "phase2": {
+    "kinematics_from_truth": true,
+    "free_parameters": [
+      "centre_0",
+      "centre_1"
+    ]
+  },
+  "priors": {
+    "centre_0": {
+      "type": "UniformPrior",
+      "lower_limit": -0.05,
+      "upper_limit": 0.05
+    },
+    "centre_1": {
+      "type": "UniformPrior",
+      "lower_limit": -0.05,
+      "upper_limit": 0.05
+    },
+    "z_centre": {
+      "type": "UniformPrior",
+      "lower_limit": -10.0,
+      "upper_limit": 10.0
+    },
+    "effective_radius": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.03,
+      "upper_limit": 0.3
+    },
+    "phi": {
+      "type": "UniformPrior",
+      "lower_limit": 70.0,
+      "upper_limit": 110.0
+    },
+    "inclination": {
+      "type": "UniformPrior",
+      "lower_limit": 55.0,
+      "upper_limit": 75.0
+    },
+    "maximum_velocity": {
+      "type": "UniformPrior",
+      "lower_limit": 280.0,
+      "upper_limit": 360.0
+    },
+    "velocity_dispersion": {
+      "type": "UniformPrior",
+      "lower_limit": 20.0,
+      "upper_limit": 50.0
+    },
+    "turnover_radius": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.03,
+      "upper_limit": 0.07
+    },
+    "vmax_black_hole": {
+      "type": "fixed",
+      "value": 0.0
+    }
+  },
+  "search": {
+    "path_prefix": "kinms_mock_parametric_truth_kinematics",
+    "name": "phase2_truth_kinematics_free_centre",
+    "n_live": 100,
+    "number_of_cores": "auto"
+  },
+  "disk_scale_height_kpc": 0.1,
+  "debug_instance_vector": [
+    0.0,
+    0.05,
+    90.0,
+    65.0,
+    320.0,
+    35.0,
+    0.05,
+    0.0,
+    0.0
+  ]
+}

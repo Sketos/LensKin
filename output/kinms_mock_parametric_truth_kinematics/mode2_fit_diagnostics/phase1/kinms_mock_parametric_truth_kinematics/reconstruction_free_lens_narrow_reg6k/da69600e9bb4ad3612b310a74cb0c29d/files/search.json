@@ -1,0 +1,56 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.mle.bfgs.search.LBFGS",
+    "arguments": {
+        "live_visual_update": false,
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "unique_tag": null,
+        "inplace": false,
+        "tol": null,
+        "ftol": 2.220446049250313e-09,
+        "iterations_per_full_update": 1e+99,
+        "iprint": -1.0,
+        "maxiter": 1000,
+        "maxfun": 15000,
+        "name": "reconstruction_free_lens_narrow_reg6k",
+        "number_of_cores": 8,
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerBall",
+            "arguments": {
+                "lower_limit": 0.49,
+                "upper_limit": 0.51
+            }
+        },
+        "path_prefix": {
+            "type": "path",
+            "path": "kinms_mock_parametric_truth_kinematics"
+        },
+        "gtol": 1e-05,
+        "maxls": 20,
+        "iterations_per_quick_update": 1e+99,
+        "silence": false,
+        "disp": false,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "image_path_suffix": "",
+                "identifier": "da69600e9bb4ad3612b310a74cb0c29d",
+                "is_identifier_in_paths": true,
+                "path_prefix": {
+                    "type": "path",
+                    "path": "kinms_mock_parametric_truth_kinematics"
+                },
+                "unique_tag": null,
+                "parent": null,
+                "name": "reconstruction_free_lens_narrow_reg6k"
+            }
+        },
+        "eps": 1e-08,
+        "maxcor": 10
+    }
+}

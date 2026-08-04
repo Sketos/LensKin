@@ -1,0 +1,50 @@
+{
+    "type": "instance",
+    "class_path": "autofit.non_linear.search.nest.dynesty.search.static.DynestyStatic",
+    "arguments": {
+        "initial_values": {
+            "type": "dict",
+            "arguments": {}
+        },
+        "number_of_cores": 1,
+        "enlarge": null,
+        "sample": "rwalk",
+        "nlive": 200,
+        "facc": 0.2,
+        "bound": "multi",
+        "bootstrap": null,
+        "walks": 5,
+        "iterations_per_update": 500,
+        "inplace": false,
+        "name": "phase_mass[1]_m3_m4_with_KinMS",
+        "unique_tag": null,
+        "fmove": 0.9,
+        "path_prefix": {
+            "type": "path",
+            "path": "SPT0538_CO9-8_SIEfit"
+        },
+        "initializer": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.initializer.InitializerPrior",
+            "arguments": {}
+        },
+        "use_gradient": false,
+        "slices": 5,
+        "max_move": 100,
+        "paths": {
+            "type": "instance",
+            "class_path": "autofit.non_linear.paths.directory.DirectoryPaths",
+            "arguments": {
+                "parent": null,
+                "name": "phase_mass[1]_m3_m4_with_KinMS",
+                "unique_tag": null,
+                "is_identifier_in_paths": true,
+                "path_prefix": {
+                    "type": "path",
+                    "path": "SPT0538_CO9-8_SIEfit"
+                },
+                "identifier": "dded72156b3a86d8f15b7e883cccabb5"
+            }
+        }
+    }
+}

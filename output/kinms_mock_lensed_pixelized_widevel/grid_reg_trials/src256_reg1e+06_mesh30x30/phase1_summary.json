@@ -1,0 +1,11 @@
+{
+  "chi_squared": 442.8757842142651,
+  "noise_normalization": -693609.8833466519,
+  "log_likelihood_data": 346583.50378121884,
+  "regularization_term": 667.0582153974595,
+  "log_likelihood_with_regularization": 346249.9746735201,
+  "log_det_curvature_reg": 22550.224290568272,
+  "log_det_regularization": null,
+  "figure_of_merit_log_evidence": 346249.9746735201,
+  "figure_of_merit_note": "log_evidence unavailable (log-det Cholesky failed); using log_likelihood_with_regularization"
+}

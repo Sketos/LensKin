@@ -1,0 +1,121 @@
+{
+  "config_path": "./config",
+  "output_path": "./output/galpak_mock_unlensed_parametric/",
+  "data_directory": "./data/galpak_mock_unlensed",
+  "uids": [
+    "galpak_mock_unlensed"
+  ],
+  "width": "30kms",
+  "data_patterns": {
+    "frequencies": "frequencies_{uid}_width_{width}_contsub.fits",
+    "uv_wavelengths": "uv_wavelengths_{uid}_width_{width}_contsub.fits",
+    "visibilities": "visibilities_{uid}_width_{width}_contsub.fits",
+    "sigma": "sigma_statwt_{uid}_width_{width}_contsub.fits"
+  },
+  "redshift_lens": 0.404,
+  "redshift_source": 2.7855,
+  "n_pixels": 40,
+  "real_space_width": 5.0,
+  "source_grid": {
+    "n_pixels": 40
+  },
+  "rest_line_frequency_ghz": 1036.912393,
+  "model_name": "GalPak",
+  "normalization_mode": "parametric",
+  "lensing": {
+    "enabled": false
+  },
+  "flip_kinms_y_before_lensing": true,
+  "flip_velocity_axis": false,
+  "mock_pad_channels_each_side": 4,
+  "truth_parameters": {
+    "z_centre": 11.5,
+    "intensity": 0.4166666666666667,
+    "effective_radius": 0.5,
+    "phi": 90.0,
+    "inclination": 65.0,
+    "maximum_velocity": 320.0,
+    "velocity_dispersion": 35.0,
+    "turnover_radius": 0.05,
+    "centre_0": 0.0,
+    "centre_1": 0.0
+  },
+  "free_lens_centre": false,
+  "lens_centre_half_width": 0.05,
+  "lens_mass_model": {
+    "centre_0": 0.0,
+    "centre_1": 0.0,
+    "einstein_radius": 0.0,
+    "elliptical_comps_0": 0.0,
+    "elliptical_comps_1": 0.0,
+    "slope": 2.0,
+    "shear_elliptical_comps_0": 0.0,
+    "shear_elliptical_comps_1": 0.0,
+    "multipole_m3_elliptical_comps_0": 0.0,
+    "multipole_m3_elliptical_comps_1": 0.0,
+    "multipole_m4_elliptical_comps_0": 0.0,
+    "multipole_m4_elliptical_comps_1": 0.0
+  },
+  "plot": true,
+  "write_dirty_data_cube": false,
+  "write_dirty_model_cube": false,
+  "priors": {
+    "centre_0": {
+      "type": "UniformPrior",
+      "lower_limit": -0.05,
+      "upper_limit": 0.05
+    },
+    "centre_1": {
+      "type": "UniformPrior",
+      "lower_limit": -0.05,
+      "upper_limit": 0.05
+    },
+    "z_centre": {
+      "type": "UniformPrior",
+      "lower_limit": 8.0,
+      "upper_limit": 15.0
+    },
+    "intensity": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.001,
+      "upper_limit": 5.0
+    },
+    "effective_radius": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.1,
+      "upper_limit": 1.0
+    },
+    "phi": {
+      "type": "UniformPrior",
+      "lower_limit": 70.0,
+      "upper_limit": 110.0
+    },
+    "inclination": {
+      "type": "UniformPrior",
+      "lower_limit": 55.0,
+      "upper_limit": 75.0
+    },
+    "maximum_velocity": {
+      "type": "UniformPrior",
+      "lower_limit": 280.0,
+      "upper_limit": 360.0
+    },
+    "velocity_dispersion": {
+      "type": "UniformPrior",
+      "lower_limit": 20.0,
+      "upper_limit": 50.0
+    },
+    "turnover_radius": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.03,
+      "upper_limit": 0.07
+    }
+  },
+  "search": {
+    "path_prefix": "galpak_mock_unlensed_parametric",
+    "name": "truth_kinematics_fit",
+    "n_live": 100,
+    "number_of_cores": 4
+  },
+  "disk_scale_height_kpc": 0.1
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "label": "constant_split_1e5",
+    "chi_squared": 147139.926020681,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_sigma/constant_split_1e5"
+  },
+  {
+    "label": "adapt_split_i1_o80",
+    "chi_squared": 146625.15608075119,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_sigma/adapt_split_i1_o80"
+  },
+  {
+    "label": "adapt_split_inner_opt_o80",
+    "chi_squared": 146624.87461045978,
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_sigma/adapt_split_inner_opt_o80"
+  }
+]

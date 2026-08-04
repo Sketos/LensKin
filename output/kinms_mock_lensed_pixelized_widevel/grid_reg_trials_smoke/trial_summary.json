@@ -1,0 +1,8 @@
+{
+  "frozen_ceiling": {
+    "chi_squared_per_datum": 0.0,
+    "log_likelihood": 2946347.2901614755
+  },
+  "n_trials": 2,
+  "csv": "output/kinms_mock_lensed_pixelized_widevel/grid_reg_trials_smoke/trial_summary.csv"
+}

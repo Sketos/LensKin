@@ -1,6 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# Autolens NUFFT dirty images are vertically flipped to match astronomical
+# coordinates and should be displayed with origin="lower".
+DEFAULT_IMAGE_ORIGIN = "lower"
+
+
 # NOTE
 def plot_cube(
     cube,
@@ -11,10 +16,12 @@ def plot_cube(
     xlim=None,
     ylim=None,
     figsize=None,
-    origin=None,
+    origin=DEFAULT_IMAGE_ORIGIN,
     cmap="jet",
     aspect="auto",
     interpolation="None",
+    colorbar=False,
+    colorbar_label=None,
     subplots_kwargs={
         "wspace":0.01,
         "hspace":0.01,
@@ -29,6 +36,10 @@ def plot_cube(
         nrows = int(cube.shape[0] / ncols)
     else:
         nrows = int(cube.shape[0] / ncols) + 1
+    # Leave room on the right when a colour bar is requested.
+    if colorbar:
+        subplots_kwargs = dict(subplots_kwargs)
+        subplots_kwargs["right"] = min(float(subplots_kwargs.get("right", 0.99)), 0.90)
     figure, axes = plt.subplots(
         nrows=nrows, ncols=ncols, figsize=(15, 1.25 * nrows)
     )
@@ -40,9 +51,10 @@ def plot_cube(
     if vmax is None:
         vmax = np.nanmax(cube)
 
+    last_im = None
     for i, (ax, image) in enumerate(zip(axes_flattened, cube)):
         if i < cube.shape[0]:
-            ax.imshow(
+            last_im = ax.imshow(
                 image,
                 cmap=cmap,
                 aspect=aspect,
@@ -104,5 +116,14 @@ def plot_cube(
     figure.subplots_adjust(
         **subplots_kwargs
     )
+    if colorbar and last_im is not None:
+        cbar = figure.colorbar(
+            last_im,
+            ax=list(axes_flattened),
+            fraction=0.02,
+            pad=0.02,
+        )
+        if colorbar_label is not None:
+            cbar.set_label(colorbar_label)
 
     return figure, axes

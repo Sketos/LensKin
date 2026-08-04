@@ -1,0 +1,46 @@
+Bayesian Evidence                                                               -755604.07310017
+Maximum Log Likelihood                                                          -755590.18591628
+Maximum Log Posterior                                                           -755590.10572386
+
+model                                                                           Collection (N=2)
+    galaxies                                                                    Collection (N=2)
+        source                                                                  GalPaK (N=2)
+
+Maximum Log Likelihood Model:
+
+galaxies
+    source
+        centre
+            centre_0                                                            0.000
+            centre_1                                                            0.200
+
+
+Summary (3.0 sigma limits):
+
+galaxies
+    source
+        centre
+            centre_0                                                            0.0001 (-0.0007, 0.0010)
+            centre_1                                                            0.2001 (0.1994, 0.2011)
+
+
+Summary (1.0 sigma limits):
+
+galaxies
+    source
+        centre
+            centre_0                                                            0.0001 (-0.0001, 0.0004)
+            centre_1                                                            0.2001 (0.1998, 0.2004)
+
+instances
+
+galaxies
+    source
+        z_centre                                                                8.0
+        intensity                                                               1.0
+        effective_radius                                                        0.2
+        inclination                                                             65.0
+        phi                                                                     90.0
+        turnover_radius                                                         0.05
+        maximum_velocity                                                        250.0
+        velocity_dispersion                                                     50.0

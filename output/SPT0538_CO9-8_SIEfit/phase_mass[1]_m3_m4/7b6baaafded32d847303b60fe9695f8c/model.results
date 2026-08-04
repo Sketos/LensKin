@@ -1,0 +1,60 @@
+Bayesian Evidence                                                               4672941.87990261
+Maximum Log Likelihood                                                          4672993.03209665
+Maximum Log Posterior                                                           4673051.10227177
+
+model                                                                           Collection (N=10)
+    galaxies                                                                    Collection (N=10)
+        source                                                                  GalPaK (N=10)
+
+Maximum Log Likelihood Model:
+
+galaxies
+    source
+        turnover_radius                                                         0.000
+        centre
+            centre_0                                                            -0.113
+            centre_1                                                            0.087
+        z_centre                                                                15.461
+        effective_radius                                                        0.206
+        phi                                                                     15.918
+        inclination                                                             63.872
+        intensity                                                               0.017
+        maximum_velocity                                                        329.466
+        velocity_dispersion                                                     35.894
+
+
+Summary (3.0 sigma limits):
+
+galaxies
+    source
+        turnover_radius                                                         0.0001 (0.0000, 0.0012)
+        centre
+            centre_0                                                            -0.1125 (-0.1181, -0.1073)
+            centre_1                                                            0.0869 (0.0838, 0.0896)
+        z_centre                                                                15.45 (15.32, 15.58)
+        effective_radius                                                        0.2041 (0.1960, 0.2145)
+        phi                                                                     15.9279 (14.9764, 17.0166)
+        inclination                                                             63.8285 (63.1579, 64.5804)
+        intensity                                                               0.0173 (0.0168, 0.0179)
+        maximum_velocity                                                        330.1 (325.0, 336.2)
+        velocity_dispersion                                                     38.1727 (32.7881, 43.5087)
+
+
+Summary (1.0 sigma limits):
+
+galaxies
+    source
+        turnover_radius                                                         0.0001 (0.0000, 0.0003)
+        centre
+            centre_0                                                            -0.1125 (-0.1144, -0.1108)
+            centre_1                                                            0.0869 (0.0859, 0.0878)
+        z_centre                                                                15.45 (15.41, 15.49)
+        effective_radius                                                        0.2041 (0.2009, 0.2074)
+        phi                                                                     15.9279 (15.6034, 16.2689)
+        inclination                                                             63.8285 (63.6557, 64.0293)
+        intensity                                                               0.0173 (0.0171, 0.0175)
+        maximum_velocity                                                        330.1 (328.3, 331.9)
+        velocity_dispersion                                                     38.1727 (36.2230, 39.9961)
+
+instances
+

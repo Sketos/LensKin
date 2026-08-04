@@ -1,0 +1,36 @@
+[
+  {
+    "label": "constant_split_opt",
+    "chi_squared": 146563.94323767172,
+    "log_likelihood": 222576.65228333412,
+    "regularization": {
+      "cls": "ConstantSplit",
+      "coefficient": 258.2640394130465
+    },
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_opt_inner/constant_split_opt"
+  },
+  {
+    "label": "adapt_split_inner_opt_o30",
+    "chi_squared": 146564.32820385354,
+    "log_likelihood": 222576.4598002432,
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.06948260052189843,
+      "outer_coefficient": 30.0,
+      "signal_scale": 3.0
+    },
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_opt_inner/adapt_split_inner_opt_o30"
+  },
+  {
+    "label": "adapt_split_inner_opt_o10",
+    "chi_squared": 146563.93578093755,
+    "log_likelihood": 222576.6560117012,
+    "regularization": {
+      "cls": "AdaptSplit",
+      "inner_coefficient": 0.9728399094623792,
+      "outer_coefficient": 10.0,
+      "signal_scale": 3.0
+    },
+    "plots": "/Users/hstacey/packages/LensKin/output/kinms_mock_lensed_adapt_smoke/plots/const_vs_adapt_opt_inner/adapt_split_inner_opt_o10"
+  }
+]

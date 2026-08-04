@@ -1,0 +1,109 @@
+{
+  "config_path": "./config",
+  "output_path": "/opsw/work/hstacey/LensKin/output/3e8smbh/",
+  "data_directory": "/opsw/work/hstacey/mock_SMBH/SPT0538/nosmbh",
+  "uids": [
+    "SPT0538_mock"
+  ],
+  "width": "30kms",
+  "data_patterns": {
+    "frequencies": "frequencies_{uid}_width_{width}_contsub.fits",
+    "uv_wavelengths": "uv_wavelengths_{uid}_width_{width}_contsub.fits",
+    "visibilities": "visibilities_{uid}_width_{width}_contsub.fits",
+    "sigma": "sigma_statwt_{uid}_width_{width}_contsub.fits"
+  },
+  "redshift_lens": 0.404,
+  "redshift_source": 2.788,
+  "n_pixels": 512,
+  "real_space_width": 5.0,
+  "rest_line_frequency_ghz": 1036.912393,
+  "model_name": "KinMS",
+  "normalization_mode": "parametric",
+  "lens_mass_model": {
+    "centre_0": 0.052,
+    "centre_1": 0.21,
+    "einstein_radius": 1.731,
+    "elliptical_comps_0": -0.047,
+    "elliptical_comps_1": -0.056,
+    "slope": 2.0,
+    "shear_elliptical_comps_0": -0.007,
+    "shear_elliptical_comps_1": -0.01,
+    "multipole_m3_elliptical_comps_0": 0.0,
+    "multipole_m3_elliptical_comps_1": 0.0,
+    "multipole_m4_elliptical_comps_0": 0.0,
+    "multipole_m4_elliptical_comps_1": 0.0
+  },
+  "debug_instance_vector": [
+    0.1,
+    0.11,
+    0.0,
+    0.045,
+    0.234,
+    65.0,
+    12.0,
+    0.05,
+    320.0,
+    35.0,
+    0.0
+  ],
+  "priors": {
+    "centre_0": {
+      "type": "UniformPrior",
+      "lower_limit": -0.5,
+      "upper_limit": 0.5
+    },
+    "centre_1": {
+      "type": "UniformPrior",
+      "lower_limit": -0.5,
+      "upper_limit": 0.5
+    },
+    "z_centre": {
+      "type": "UniformPrior",
+      "lower_limit": 0.0,
+      "upper_limit": 30.0
+    },
+    "effective_radius": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.004,
+      "upper_limit": 0.4
+    },
+    "phi": {
+      "type": "UniformPrior",
+      "lower_limit": -180.0,
+      "upper_limit": 180.0
+    },
+    "inclination": {
+      "type": "UniformPrior",
+      "lower_limit": 10.0,
+      "upper_limit": 89.0
+    },
+    "intensity": {
+      "type": "LogUniformPrior",
+      "lower_limit": 0.001,
+      "upper_limit": 0.1
+    },
+    "maximum_velocity": {
+      "type": "UniformPrior",
+      "lower_limit": 200.0,
+      "upper_limit": 400.0
+    },
+    "velocity_dispersion": {
+      "type": "UniformPrior",
+      "lower_limit": 10.0,
+      "upper_limit": 60.0
+    },
+    "vmax_black_hole": {
+      "type": "LogUniformPrior",
+      "lower_limit": 1.0,
+      "upper_limit": 10000.0
+    }
+  },
+  "search": {
+    "path_prefix": "SPT0538_mock",
+    "name": "phase_mass[1]_m3_m4_with_KinMS",
+    "n_live": 200,
+    "number_of_cores": "auto"
+  },
+  "disk_scale_height_kpc": 0.1,
+  "flip_kinms_y_before_lensing": false
+}
